@@ -224,9 +224,8 @@ body {
 #qui-sommes-nous {
   position: relative;
   z-index: 2;  /* Assurez-vous que cette section soit au-dessus de #accueil */
-  background-color: #f4f4f4; /* Fond léger pour la section */
 font-family: "Josefin Sans", sans-serif;
-padding: 60px 0;
+
 }
 
 .josefont{
@@ -283,11 +282,7 @@ padding: 60px 0;
   }
 }
 
-/* Global Styles */
-#services {
-  background-color: #f9f9f9;
-  
-}
+
 .cont-marg{
   width: 95%;
   max-width: 1200px;
@@ -335,11 +330,6 @@ h2 {
   font-size: 2rem;
 }
 
-
-
-#contact {
-  background-color: #f8f9fa;
-}
 
 .contact-form {
   background-color: #ffffff;
