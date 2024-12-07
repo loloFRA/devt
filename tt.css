@@ -1,4 +1,6 @@
-
+.antonfont{
+  font-family: "Anton SC", sans-serif;
+}
 html, body {
   height: 100%; 
   margin: 0;
@@ -75,7 +77,30 @@ body {
       font-weight: 400;
       font-style: normal;
       font-size: 1.1em;
+
       }
+      @media (min-width: 992px) {
+  #name_entreprise {
+    font-size: 1.7em; /* Plus grand titre sur grands écrans */
+  }
+}
+
+@media (min-width: 1200px) {
+  #name_entreprise {
+    font-size: 2em; /* Encore plus grand pour très grands écrans */
+  }
+}
+ @media (min-width: 992px) {
+  #name_connect {
+    font-size: 1.5em; /* Plus grand titre sur grands écrans */
+  }
+}
+
+@media (min-width: 1200px) {
+  #name_connect {
+    font-size: 1.8em; /* Encore plus grand pour très grands écrans */
+  }
+}
    .btn_scrolled {
 
       color: white !important; 
@@ -164,14 +189,17 @@ body {
   margin-top: 20px; /* Ajoute de l'espace au-dessus du bouton */
   padding: 10px 20px;
   font-size: 0.8em;
-  color: white;
+  color: #fff;
   text-decoration: none; /* Supprime le soulignement du lien */
-  background-color: #007BFF; /* Couleur bleue pour le bouton */
+  background-color: #01a9df; /* Couleur bleue pour le bouton */
   border-radius: 5px;
   border: 0.5px solid rgba(0, 0, 0,.5); /* Supprime les bordures par défaut */
    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
               inset -2px -2px 5px rgba(255,255,255, 0.5); 
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 900;
+  font-size: 0.8em;
 }
 
 #btn-contact:hover {
@@ -197,11 +225,15 @@ body {
   position: relative;
   z-index: 2;  /* Assurez-vous que cette section soit au-dessus de #accueil */
   background-color: #f4f4f4; /* Fond léger pour la section */
-  padding: 60px 0;/* Espacement autour de la section */
+font-family: "Josefin Sans", sans-serif;
+padding: 60px 0;
 }
 
+.josefont{
+  font-family: "Josefin Sans", sans-serif;
+}
 #qui-sommes-nous .container {
-  width: 80%;
+  width: 95%;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -215,7 +247,7 @@ body {
 #qui-sommes-nous .content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   gap: 40px;
   flex-wrap: wrap;
 }
@@ -250,60 +282,61 @@ body {
     margin-bottom: 30px;
   }
 }
-/* Dégradé du plus clair en haut vers le plus foncé en bas */
-.bg-primary-gradient {
-  background: linear-gradient(to bottom, #00aaff, #007bff); /* Dégradé du clair au foncé */
-}
 
-.bg-success-gradient {
-  background: linear-gradient(to bottom, #34d058, #28a745);
+/* Global Styles */
+#services {
+  background-color: #f9f9f9;
+  
 }
-
-.bg-warning-gradient {
-  background: linear-gradient(to bottom, #ffcc00, #ffc107);
-}
-
-.bg-danger-gradient {
-  background: linear-gradient(to bottom, #e53e3e, #dc3545);
-}
-
-.bg-info-gradient {
-  background: linear-gradient(to bottom, #00bcd4, #17a2b8);
-}
-
-.bg-secondary-gradient {
-  background: linear-gradient(to bottom, #7f8c8d, #6c757d);
-}
-
-/* Ombre intérieure et extérieure pour les services */
-.service-box {
-  background-color: #f8f9fa; /* Fond clair pour ne pas interférer avec le gradient */
+.cont-marg{
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), inset 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre extérieur et intérieur */
-  transition: transform 0.3s ease-in-out;
+  text-align: center;
 }
 
-.service-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3), inset 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre plus marquée au survol */
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Effet de translation de l'image */
-.service-box img {
-  border-radius: 50%;
+.service-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-effect {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), inset 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre extérieure et intérieure */
-  padding: 20px;
-  transition: all 0.3s ease-in-out;
+.service-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2), inset 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.service-effect:hover {
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3), inset 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre plus marquée au survol */
-  transform: translateY(-10px); /* Effet de translation pour un léger déplacement vers le haut */
+.service-icon {
+  font-size: 1.8rem;
+  color: #007bff; /* Bootstrap primary color */
+  margin-right: 15px;
 }
+
+.service-list span {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+h2 {
+  color: #333;
+  font-size: 2rem;
+}
+
+
+
 #contact {
   background-color: #f8f9fa;
 }
