@@ -197,7 +197,7 @@ body {
   position: relative;
   z-index: 2;  /* Assurez-vous que cette section soit au-dessus de #accueil */
   background-color: #f4f4f4; /* Fond léger pour la section */
-  padding: 60px 0; /* Espacement autour de la section */
+  padding: 60px 0;/* Espacement autour de la section */
 }
 
 #qui-sommes-nous .container {
