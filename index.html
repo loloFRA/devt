@@ -12,6 +12,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="tt.css">
+  <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -49,7 +51,7 @@
         <h1>Une expertise électrique au service de tous vos projets</h1>
         <hr>
         <p id="p_accueil">Spécialistes en installations et dépannages électriques, nous intervenons pour les particuliers, le collectif, et le tertiaire à Toulouse et ses environs.</p>
-        <a href="#" id="btn-contact">Nous contacter</a>
+        <a href="#contact" id="btn-contact">Nous contacter</a>
       </div>
     </div>
   </section>
@@ -60,7 +62,7 @@
     <div class="row align-items-center">
       <!-- Colonne image avec une taille réduite -->
       <div class="col-md-6 mb-4 mb-md-0 text-center">
-        <img src="imagequipe.jpg" alt="Notre équipe" class="img-fluid rounded-circle shadow" style="max-width: 70%; height: auto;">
+        <img src="imagequipe.jpg" alt="Notre équipe" class="img-fluid rounded-circle shadow" style="max-width: 50%; height: auto;">
       </div>
       <!-- Colonne texte -->
         <div class="col-md-6">
@@ -72,67 +74,53 @@
     </div>
   </section>
 
-  <section id="services" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Nos Services</h2>
-    <div class="row text-center">
-      <!-- Service 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="service-box text-white p-4 rounded shadow service-effect bg-primary-gradient">
-          <img src="imagequipe.jpg" alt="Electricité" class="img-fluid mb-3 rounded-circle" style="max-width: 100px; transform: translateY(-15px);">
-          <h4>Installation Électrique</h4>
-          <p>Nous proposons des solutions d'installation électrique pour les particuliers et les professionnels, en respectant les normes de sécurité et d'efficacité énergétique.</p>
-        </div>
+  <section id="services" class="py-5">
+  <div class="container cont-marg bg-light">
+    <h2 class="text-center mb-4 josefont">Nos Services</h2>
+    <div class="row">
+      <div class="col-md-6 ">
+        <ul class="service-list">
+          <li>
+            <i class="fas fa-video service-icon text-primary"></i>
+            <span>Vidéosurveillance</span>
+          </li>
+          <li>
+            <i class="fas fa-lightbulb service-icon text-warning"></i>
+            <span>Électricité</span>
+          </li>
+          <li>
+            <i class="fas fa-home service-icon text-danger"></i>
+            <span>Domotique</span>
+          </li>
+        </ul>
       </div>
-      <!-- Service 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="service-box text-white p-4 rounded shadow service-effect bg-success-gradient">
-          <img src="imagequipe.jpg" alt="Vidéosurveillance" class="img-fluid mb-3 rounded-circle" style="max-width: 100px; transform: translateY(-15px);">
-          <h4>Vidéosurveillance</h4>
-          <p>Protégez votre maison ou entreprise avec nos systèmes de vidéosurveillance modernes et performants. Nous assurons l'installation et la maintenance des équipements.</p>
-        </div>
-      </div>
-      <!-- Service 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="service-box text-white p-4 rounded shadow service-effect bg-warning-gradient">
-          <img src="imagequipe.jpg" alt="Domotique" class="img-fluid mb-3 rounded-circle" style="max-width: 100px; transform: translateY(-15px);">
-          <h4>Domotique</h4>
-          <p>Transformez votre habitat en maison intelligente avec nos solutions domotiques. Contrôlez l'éclairage, la température, la sécurité et plus encore depuis votre smartphone.</p>
-        </div>
-      </div>
-      <!-- Service 4 -->
-      <div class="col-md-4 mb-4">
-        <div class="service-box text-white p-4 rounded shadow service-effect bg-danger-gradient">
-          <img src="imagequipe.jpg" alt="Antenne et Parabole" class="img-fluid mb-3 rounded-circle" style="max-width: 100px; transform: translateY(-15px);">
-          <h4>Antenne & Parabole</h4>
-          <p>Nous installons des antennes et paraboles pour une réception optimale de vos chaînes TV, avec des services de maintenance et de dépannage.</p>
-        </div>
-      </div>
-      <!-- Service 5 -->
-      <div class="col-md-4 mb-4">
-        <div class="service-box text-white p-4 rounded shadow service-effect bg-info-gradient">
-          <img src="imagequipe.jpg" alt="Contrôle d'Accès" class="img-fluid mb-3 rounded-circle" style="max-width: 100px; transform: translateY(-15px);">
-          <h4>Contrôle d'Accès</h4>
-          <p>Garantissez la sécurité de vos locaux avec nos solutions de contrôle d'accès. Installation de badges, lecteurs biométriques et plus encore.</p>
-        </div>
-      </div>
-      <!-- Service 6 -->
-      <div class="col-md-4 mb-4">
-        <div class="service-box text-white p-4 rounded shadow service-effect bg-secondary-gradient">
-          <img src="imagequipe.jpg" alt="Interphone" class="img-fluid mb-3 rounded-circle" style="max-width: 100px; transform: translateY(-15px);">
-          <h4>Interphonie</h4>
-          <p>Communiquez facilement avec nos solutions d'interphone pour vos maisons et immeubles, en ajoutant des fonctionnalités comme la vidéo ou l'ouverture de porte à distance.</p>
-        </div>
+      <div class="col-md-6">
+        <ul class="service-list">
+          <li>
+            <i class="fas fa-satellite-dish service-icon text-info"></i>
+            <span>Antennes</span>
+          </li>
+          <li>
+            <i class="fas fa-lock service-icon text-success"></i>
+            <span>Contrôle d'accès</span>
+          </li>
+          <li>
+            <i class="fas fa-phone service-icon text-secondary"></i>
+            <span>Interphones</span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
+
+
 <!-- contact -->
-<section id="contact" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Nous Contacter</h2>
-    <div class="row">
+<section id="contact" class="py-5">
+  <div class="container cont-marg bg-light">
+    <h2 class="text-center mb-4 josefont">Nous Contacter</h2>
+    <div class="row" style="text-align: left">
       <div class="col-md-6 mb-4">
         <h4>Contactez-nous</h4>
         <p>Vous avez une question, un projet ou besoin d'aide ? N'hésitez pas à nous envoyer un message, nous serons ravis de vous répondre dans les plus brefs délais.</p>
@@ -155,7 +143,10 @@
             <label for="message" class="form-label">Message</label>
             <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <div style="text-align: center;width: 100%">
+            <button type="submit" class="btn btn-primary" >Envoyer</button>
+          </div>
+          
         </form>
       </div>
     </div>
@@ -163,7 +154,7 @@
 </section>
 
 
-<footer class="bg-dark text-white pt-5 pb-4">
+<footer class="bg-dark text-white pt-5 pb-4 ">
   <div class="container">
     <div class="row">
       <!-- Colonne Contact -->
@@ -171,7 +162,7 @@
         <h5 class="mb-3">Nous Contacter</h5>
         <p><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Électricité, Toulouse</p>
         <p><i class="fas fa-phone-alt"></i> +33 1 23 45 67 89</p>
-        <p><i class="fas fa-envelope"></i> contact@bienesconnect.com</p>
+        <p><i class="fas fa-envelope"></i> test.com</p>
       </div>
 
       <!-- Colonne Liens Importants -->
