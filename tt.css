@@ -1,0 +1,252 @@
+
+html, body {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+.bg-light {
+  background-color: #e8e8e8 !important; /* Une teinte légèrement grisée */
+}
+.navbar {
+  transition: all 0.4s ease;
+}
+
+.navbar.transparent {
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: #1d1d1d !important;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+      transition: all 0.4s ease;
+      color: black !important;
+      font-size: 1.5em;
+    }
+
+    .navbar-brand.scrolled {
+      font-size: 1em;
+      color: white !important;
+      font-size: 1em;
+    }
+
+    /* Styles pour le menu latéral */
+    .offcanvas-start {
+      background-color: black;
+      color: white;
+    }
+
+    .offcanvas-header {
+      border-bottom: 1px solid #444;
+    }
+
+    .offcanvas-body a {
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      display: block;
+      font-size: 1.5rem;
+    }
+
+    .offcanvas-body a:hover {
+      color: #aaa;
+    }
+    #name_entreprise{
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+      font-style: normal;
+        font-size: 1.3em;
+        vertical-align: baseline;
+      }
+      #name_connect{
+        font-family: "Lobster", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.1em;
+      }
+   .btn_scrolled {
+
+      color: white !important; 
+      font-size: 1.5em;
+}
+      #logo{
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+          font-style: normal;
+          margin-left: 20px;align-items: right;
+      }
+      .btn_menu{
+        background: transparent;
+          border: none;
+        color:black;
+        font-size: 2em;
+      }
+      .img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-animation-name: zoomIn_header;
+    animation-name: zoomIn_header;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    background-image: url('bgtest.png');
+    -webkit-filter: blur(15px); /* For Safari and older Webkit browsers */
+            filter: blur(15px);        /* Standard property */
+            -webkit-transform: scale(1.5);
+        transform: scale(1.5)
+}
+
+@keyframes zoomIn_header {
+    0% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5)
+        -webkit-filter: blur(15px); /* For Safari and older Webkit browsers */
+            filter: blur(15px);        /* Standard property */
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+        -webkit-filter: blur(2px); /* For Safari and older Webkit browsers */
+            filter: blur(2px);        /* Standard property */
+    }
+}
+
+
+#txt_accueil{  
+    padding: 20px 50px 20px 50px;
+    margin:15px;
+  z-index: 2;
+  background-color: rgba(0,0,0,.8);
+  color:white;
+    text-align: center;
+
+
+}
+#p_accueil{
+  font-family: "Josefin Sans", sans-serif;
+}
+#btn-contact {
+  display: inline-block; /* Transforme le lien en bouton */
+  margin-top: 20px; /* Ajoute de l'espace au-dessus du bouton */
+  padding: 10px 20px;
+  font-size: 0.8em;
+  color: white;
+  text-decoration: none; /* Supprime le soulignement du lien */
+  background-color: #007BFF; /* Couleur bleue pour le bouton */
+  border-radius: 5px;
+  border: 0.5px solid rgba(0, 0, 0,.5); /* Supprime les bordures par défaut */
+   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+              inset -2px -2px 5px rgba(0, 0, 0, 0.5); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#btn-contact:hover {
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4),
+              inset -1px -1px 3px rgba(255, 255, 255, 0.3),
+              2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+}
+
+#accueil {
+  position: relative;  /* Change de absolute à relative */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;  /* Hauteur de la section à 100% de la fenêtre */
+  top: 0;
+  left: 0;
+  z-index: 1;  /* Assurez-vous que la section qui suit soit au-dessus de celle-ci */
+}
+
+#qui-sommes-nous {
+  position: relative;
+  z-index: 2;  /* Assurez-vous que cette section soit au-dessus de #accueil */
+  background-color: #f4f4f4; /* Fond léger pour la section */
+  padding: 60px 0; /* Espacement autour de la section */
+}
+
+#qui-sommes-nous .container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+#qui-sommes-nous h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#qui-sommes-nous .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#qui-sommes-nous .text {
+  flex: 1;
+  max-width: 600px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+#qui-sommes-nous .image {
+  flex: 1;
+  max-width: 500px;
+}
+
+#qui-sommes-nous .image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+  #qui-sommes-nous .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #qui-sommes-nous .text {
+    margin-bottom: 30px;
+  }
+}
