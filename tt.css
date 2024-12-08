@@ -21,7 +21,7 @@ body {
   color: black;
 }
 .bg-light {
-  background-color: #e8e8e8 !important; /
+  background-color: #e8e8e8 !important; 
 }
 .navbar {
   transition: all 0.4s ease;
@@ -362,6 +362,9 @@ background-color: transparent;
 }
 #textsendms{
   font-family: "Josefin Sans", sans-serif;
+}
+.list-group-item{
+background-color: #fff !important; 
 }
 footer {
   background-color: #1d1d1d;
