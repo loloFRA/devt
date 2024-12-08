@@ -13,9 +13,15 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
+  background: #e8e8e8 !important;
+}
+
+#hrperso{
+  width: 40%;
+  color: black;
 }
 .bg-light {
-  background-color: #e8e8e8 !important; /* Une teinte légèrement grisée */
+  background-color: #e8e8e8 !important; /
 }
 .navbar {
   transition: all 0.4s ease;
@@ -181,33 +187,7 @@ body {
       border-radius: 10px;
 
 }
-#p_accueil{
-  font-family: "Josefin Sans", sans-serif;
-}
-#btn-contact {
-  display: inline-block; /* Transforme le lien en bouton */
-  margin-top: 20px; /* Ajoute de l'espace au-dessus du bouton */
-  padding: 10px 20px;
-  font-size: 0.8em;
-  color: #fff;
-  text-decoration: none; /* Supprime le soulignement du lien */
-  background-color: #01a9df; /* Couleur bleue pour le bouton */
-  border-radius: 5px;
-  border: 0.5px solid rgba(0, 0, 0,.5); /* Supprime les bordures par défaut */
-   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
-              inset -2px -2px 5px rgba(255,255,255, 0.5); 
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 900;
-  font-size: 0.8em;
-}
 
-#btn-contact:hover {
-  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4),
-              inset -1px -1px 3px rgba(255, 255, 255, 0.3),
-              2px 2px 5px rgba(0, 0, 0, 0.3);
-  border: 2px solid white;
-}
 
 #accueil {
   position: relative;  /* Change de absolute à relative */
@@ -219,21 +199,21 @@ body {
   top: 0;
   left: 0;
   z-index: 1;  /* Assurez-vous que la section qui suit soit au-dessus de celle-ci */
+
 }
 
 #qui-sommes-nous {
   position: relative;
   z-index: 2;  /* Assurez-vous que cette section soit au-dessus de #accueil */
 font-family: "Josefin Sans", sans-serif;
-
+margin-bottom: 20px;
 }
 
 .josefont{
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Anton SC", sans-serif;
+  font-size: 2.5em
 }
 #qui-sommes-nous .container {
-  width: 95%;
-  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -282,7 +262,6 @@ font-family: "Josefin Sans", sans-serif;
   }
 }
 
-
 .cont-marg{
   width: 95%;
   max-width: 1200px;
@@ -290,7 +269,15 @@ font-family: "Josefin Sans", sans-serif;
   padding: 20px;
   text-align: center;
 }
+#services{
+  background-image: url('servicesbg.png'); /* Remplacez par le chemin de votre image */
+            background-size: cover; /* Pour que l'image couvre toute la zone */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat;
+   padding-bottom: 80px;
+   color:black;
 
+}
 .service-list {
   list-style: none;
   padding: 0;
@@ -329,47 +316,46 @@ h2 {
   color: #333;
   font-size: 2rem;
 }
+#conct_bg{
+background-color: transparent;
 
-
-.contact-form {
-  background-color: #ffffff;
+}
+#contact {
+  
+  background-image: url('imgcontact.png'); /* Remplacez par le chemin de votre image */
+            background-size: cover; /* Pour que l'image couvre toute la zone */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat;
+            color: white;
+            padding: 50px
+}
+.cont_contact{
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 15px rgba(0,0,0,.4);
+  background: rgba(0,0,0,.7);
+    overflow: hidden;
 }
-
-.contact-form .form-control {
-  border-radius: 4px;
-}
-
-.contact-form .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-  padding: 10px 20px;
-  border-radius: 50px;
-}
-
-.contact-form .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-
 #contact h4 {
-  font-weight: 600;
-  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-#contact p {
-  font-size: 1rem;
-  color: #555;
+.btn-warning {
+  background-color: #ff9800;
+  border-color: #ff9800;
 }
 
-@media (max-width: 768px) {
-  #contact .col-md-6 {
-    margin-bottom: 20px;
-  }
+.btn-warning:hover {
+  background-color: #e68900;
+  border-color: #e68900;
 }
 
+.form-control {
+  width: 100%; /* Assurez-vous que les champs de formulaire utilisent toute la largeur */
+}
+#textsendms{
+  font-family: "Josefin Sans", sans-serif;
+}
 footer {
   background-color: #1d1d1d;
 }
