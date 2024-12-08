@@ -1,427 +1,303 @@
-.antonfont{
-  font-family: "Anton SC", sans-serif;
-}
-html, body {
-  height: 100%; 
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dev bc</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- fonts CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+<!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
-  background: #e8e8e8 !important;
-}
+  <link rel="stylesheet" href="tt.css">
+  <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-#hrperso{
-  width: 40%;
-  color: black;
-}
-.bg-light {
-  background-color: #e8e8e8 !important; 
-}
-.navbar {
-  transition: all 0.4s ease;
-}
+</head>
+<body>
 
-.navbar.transparent {
-  background-color: transparent;
-}
+  <header>
+    <nav class="navbar navbar-expand-lg transparent fixed-top" >
+      <div class="container">      
+        <div class="navbar-brand mx-auto" href="#" style="display: inline-flex; align-items: baseline;">      
+          <span  id="name_entreprise">Bienes</span><span id="name_connect">Connect</span>
+        </div>
+        <button class="btn btn-dark btn_menu d-flex justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"   aria-controls="offcanvasMenu">
+         ☰
+        </button>    
+      </div>
+    </nav>
+    <div class="img-container"></div>
+  </header>
+    
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a class="choixmenu" href="#accueil">Accueil</a>
+      <a class="choixmenu" href="#qui-sommes-nous">Qui sommes-nous ?</a>
+      <a class="choixmenu" href="#services">Services</a>
+      <ul class="services-menu">
+        <li><a class="choixmenu" href="#service-videosurveillance"><i class="fas fa-video service-icon text-primary"></i> Vidéosurveillance</a></li>
+        <li><a class="choixmenu" href="#service-electricite"><i class="fas fa-lightbulb service-icon text-warning"></i> Électricité</a></li>
+        <li><a class="choixmenu" href="#service-domotique"><i class="fas fa-home service-icon text-danger"></i> Domotique</a></li>
+        <li><a class="choixmenu" href="#service-antennes"><i class="fas fa-satellite-dish service-icon text-info"></i> Antennes</a></li>
+        <li><a class="choixmenu" href="#service-controle-acces"><i class="fas fa-lock service-icon text-success"></i> Contrôle d'accès</a></li>
+        <li><a class="choixmenu" href="#service-interphones"><i class="fas fa-phone service-icon text-secondary"></i> Interphones</a></li>
+      </ul>
+      <a class="choixmenu" href="#contact">Contact</a>
+    </div>
+  </div>
 
-.navbar.scrolled {
-  background-color: #1d1d1d !important;
-}
 
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-      transition: all 0.4s ease;
-      color: black !important;
-      font-size: 1.5em;
-    }
+  <section>
+    <div id="accueil">
+      <div id="txt_accueil">
+        <h1>Une expertise au service de tous vos projets</h1>
+        <hr>
+        <p id="p_accueil">Spécialistes en installations et dépannages électriques, nous intervenons pour les particuliers, le collectif, et le tertiaire à Toulouse et ses environs</p>
+      </div>
+    </div>
+  </section>
 
-    .navbar-brand.scrolled {
-      font-size: 1em;
-      color: white !important;
-      font-size: 1em;
-    }
+  <section id="qui-sommes-nous" > 
+  <div class=" bg-light px-3">
+    <h2 class="text-center mb-4 py-5">Qui sommes-nous ?</h2>
+    <div class="row align-items-center" >
+      <!-- Colonne image avec une taille réduite -->
+      <div class="col-md-6 mb-4 mb-md-0 text-center">
+        <img src="imagequipe.jpg" alt="Notre équipe" class="img-fluid rounded-circle shadow" style="max-width: 50%; height: auto;">
+      </div>
+      <!-- Colonne texte -->
+        <div class="col-md-6" style="text-align: center;">
+          <p>Nous sommes une équipe soudée et passionnée, spécialisée dans les domaines de l’électricité, la vidéosurveillance, la domotique, les antennes et paraboles, le contrôle d’accès, ainsi que les interphones. Grâce à notre expertise, nous accompagnons nos clients particuliers, professionnels et collectivités dans tous leurs projets, en proposant des solutions modernes, fiables et adaptées à leurs besoins.</p>
+          <p>Notre mission est d’assurer la sécurité, le confort et la connectivité de vos espaces, tout en respectant les normes les plus exigeantes. Chaque membre de notre équipe partage un engagement commun : fournir un travail de qualité, basé sur l’innovation et la satisfaction de nos clients. Que ce soit pour une installation complète, une mise à jour de vos systèmes ou un dépannage, vous pouvez compter sur nous pour répondre à vos attentes avec professionnalisme et réactivité.</p>
+          <p>Ensemble, construisons des solutions qui vous simplifient la vie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    /* Styles pour le menu latéral */
-    .offcanvas-start {
-      background-color: black;
-      color: white;
-    }
 
-    .offcanvas-header {
-      border-bottom: 1px solid #444;
-    }
+  <section id="services">
+  <div class="cont-marg ">
+    <h2 class="text-center mb-4 josefont py-5" style="color:white;">Nos Services</h2>
+    <div class="row" style="margin-top: 50px">
+      <div class="col-md-6 ">
+        <ul class="service-list">
+          <li>
+            <i class="fas fa-video service-icon text-primary"></i>
+            <span>Vidéosurveillance</span>
+          </li>
+          <li>
+            <i class="fas fa-lightbulb service-icon text-warning"></i>
+            <span>Électricité</span>
+          </li>
+          <li>
+            <i class="fas fa-home service-icon text-danger"></i>
+            <span>Domotique</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="service-list">
+          <li>
+            <i class="fas fa-satellite-dish service-icon text-info"></i>
+            <span>Antennes</span>
+          </li>
+          <li>
+            <i class="fas fa-lock service-icon text-success"></i>
+            <span>Contrôle d'accès</span>
+          </li>
+          <li>
+            <i class="fas fa-phone service-icon text-secondary"></i>
+            <span>Interphones</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    .offcanvas-body a {
-      color: white;
-      text-decoration: none;
-      margin: 15px 0;
-      display: block;
-      font-size: 1.5rem;
-    }
+<section class=" d-flex align-items-center" style="min-height: 80vh; background: white">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4 josefont" >Pourquoi Nous Choisir ?</h2>
+    <ul class="list-group list-group-flush mx-auto bg-light" style="max-width: 600px; text-align: left;margin-top: 70px">
+      <li class="list-group-item">
+        <span style="color: green;">✔</span> Expertise locale à Toulouse et dans les villes environnantes
+      </li>
+      <li class="list-group-item">
+        <span style="color: green;">✔</span> Intervention rapide pour vos dépannages urgents
+      </li>
+      <li class="list-group-item">
+        <span style="color: green;">✔</span> Matériel de qualité et respect des normes
+      </li>
+      <li class="list-group-item">
+        <span style="color: green;">✔</span> Plus de 20 ans d'expérience dans le domaine
+      </li>
+      <li class="list-group-item">
+        <span style="color: green;">✔</span> Des solutions sur-mesure pour chaque client
+      </li>
+      <li class="list-group-item">
+        <span style="color: green;">✔</span> Service client réactif et à l'écoute de vos besoins
+      </li>
+    </ul>
+  </div>
+</section>
 
-    .offcanvas-body a:hover {
-      color: #aaa;
-    }
-    #name_entreprise{
-        font-family: "Anton SC", sans-serif;
-        font-weight: 400;
-      font-style: normal;
-        font-size: 1.3em;
-        vertical-align: baseline;
+
+<!-- contact -->
+<section id="contact">
+  <div class="container py-5">
+    <div class="row d-flex flex-column align-items-center">
+      <!-- Texte principal -->
+      <div class="col-12 text-center mb-3 animate-on-scroll">
+        <h4 class="antonfont" style="font-size: 2em;">Contactez-nous</h4>
+        <p>Nous allons vous répondre au plus vite</p>
+      </div>
+      <!-- Formulaire -->
+      <div class="col-12 col-md-8 animate-on-scroll">
+        <form class="d-flex flex-column">
+          <!-- Nom -->
+          <div class="mb-3 animate-on-scroll">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="name" placeholder="Votre nom">
+          </div>
+          <!-- Email -->
+          <div class="mb-3 animate-on-scroll">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Votre email">
+          </div>
+          <!-- Message -->
+          <div class="mb-3 animate-on-scroll">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Votre message"></textarea>
+          </div>
+          <!-- Bouton Envoyer -->
+          <div class="text-end animate-on-scroll">
+            <button type="submit" class="btn btn-warning px-4 py-2">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <a href="#accueil" id="scrollToTop" class="chevron ">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+
+
+
+
+<footer class="bg-dark text-white pt-5 pb-4 ">
+  <div class="container">
+    <div class="row">
+      <!-- Colonne Contact -->
+      <div class="col-md-4 mb-4">
+        <h5 class="mb-3">Nous Contacter</h5>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Électricité, Toulouse</p>
+        <p><i class="fas fa-phone-alt"></i> +33 1 23 45 67 89</p>
+        <p><i class="fas fa-envelope"></i> test.com</p>
+      </div>
+
+      <!-- Colonne Liens Importants -->
+      <div class="col-md-4 mb-4">
+        <h5 class="mb-3">Liens Utiles</h5>
+        <ul class="list-unstyled">
+          <li><a href="#accueil" class="text-white">Accueil</a></li>
+          <li><a href="#services" class="text-white">Nos Services</a></li>
+          <li><a href="#about" class="text-white">À Propos</a></li>
+          <li><a href="#contact" class="text-white">Contact</a></li>
+          <li><a href="#privacy" class="text-white">Politique de Confidentialité</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne Réseaux Sociaux -->
+      <div class="col-md-4 mb-4">
+        <h5 class="mb-3">Suivez-Nous</h5>
+        <div>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyright Section -->
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <p>&copy; 2024 Bienes Connect - Tous droits réservés.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <script>
+
+    $('.choixmenu').on('click', () => $('.btn_menu').click());
+
+    window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+      const brand = document.querySelector('.navbar-brand');
+      const nameEntreprise = document.getElementById('name_entreprise');
+      const btnMenu = document.querySelector('.btn_menu'); 
+      const chevron = document.querySelector('.chevron');
+
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+      navbar.classList.remove('transparent');
+      brand.classList.add('scrolled');
+      btnMenu.classList.add('btn_scrolled'); 
+      chevron.classList.add('show'); 
+
+
+    } else {
+      navbar.classList.add('transparent');
+      navbar.classList.remove('scrolled');
+      brand.classList.remove('scrolled');
+      btnMenu.classList.remove('btn_scrolled'); 
+      chevron.classList.remove('show');
       }
-      #name_connect{
-        font-family: "Lobster", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 1.1em;
+      });
 
+    document.addEventListener("DOMContentLoaded", () => {
+  const animatedElements = document.querySelectorAll(".animate-on-scroll");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Une fois visible, on arrête d'observer
       }
-      @media (min-width: 992px) {
-  #name_entreprise {
-    font-size: 1.7em; /* Plus grand titre sur grands écrans */
-  }
-}
+    });
+  });
 
-@media (min-width: 1200px) {
-  #name_entreprise {
-    font-size: 2em; /* Encore plus grand pour très grands écrans */
-  }
-}
- @media (min-width: 992px) {
-  #name_connect {
-    font-size: 1.5em; /* Plus grand titre sur grands écrans */
-  }
-}
+  animatedElements.forEach((el) => observer.observe(el));
+});
 
-@media (min-width: 1200px) {
-  #name_connect {
-    font-size: 1.8em; /* Encore plus grand pour très grands écrans */
-  }
-}
-   .btn_scrolled {
+  </script>
 
-      color: white !important; 
-      font-size: 1.5em;
-}
-      #logo{
-        font-family: "Anton SC", sans-serif;
-        font-weight: 400;
-          font-style: normal;
-          margin-left: 20px;align-items: right;
-      }
-      .btn_menu{
-        background: transparent;
-          border: none;
-        color:black;
-        font-size: 2em;
-      }
-      .img-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: 0;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-animation-name: zoomIn_header;
-    animation-name: zoomIn_header;
-    -webkit-animation-duration: 2.5s;
-    animation-duration: 2.5s;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
-    background-image: url('bgtest.png');
-    -webkit-filter: blur(15px); /* For Safari and older Webkit browsers */
-            filter: blur(15px);        /* Standard property */
-            -webkit-transform: scale(1.5);
-        transform: scale(1.5)
-}
-
-@keyframes zoomIn_header {
-    0% {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5)
-        -webkit-filter: blur(15px); /* For Safari and older Webkit browsers */
-            filter: blur(15px);        /* Standard property */
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1)
-        -webkit-filter: blur(2px); /* For Safari and older Webkit browsers */
-            filter: blur(2px);        /* Standard property */
-    }
-}
-
-
-#txt_accueil{  
-    padding: 20px 50px 20px 50px;
-    margin:15px;
-  z-index: 2;
-  background-color: rgba(0,0,0,.7);
-  color:white;
-    text-align: center;
-      border-radius: 10px;
-
-}
-
-
-#accueil {
-  position: relative;  /* Change de absolute à relative */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;  /* Hauteur de la section à 100% de la fenêtre */
-  top: 0;
-  left: 0;
-  z-index: 1;  /* Assurez-vous que la section qui suit soit au-dessus de celle-ci */
-
-}
-
-#qui-sommes-nous {
-  position: relative;
-  z-index: 2;  /* Assurez-vous que cette section soit au-dessus de #accueil */
-font-family: "Josefin Sans", sans-serif;
-margin-bottom: 20px;
-}
-
-.josefont{
-  font-family: "Anton SC", sans-serif;
-  font-size: 2.5em
-}
-#qui-sommes-nous .container {
-  margin: 0 auto;
-  text-align: center;
-}
-#qui-sommes-nous h2 {
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-#qui-sommes-nous .content {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-#qui-sommes-nous .text {
-  flex: 1;
-  max-width: 600px;
-  font-size: 18px;
-  color: #555;
-  line-height: 1.6;
-}
-
-#qui-sommes-nous .image {
-  flex: 1;
-  max-width: 500px;
-}
-
-#qui-sommes-nous .image img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Pour les petits écrans */
-@media (max-width: 768px) {
-  #qui-sommes-nous .content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #qui-sommes-nous .text {
-    margin-bottom: 30px;
-  }
-}
-
-.cont-marg{
-  width: 95%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-#services{
-  background-image: url('servicesbg.png'); /* Remplacez par le chemin de votre image */
-            background-size: cover; /* Pour que l'image couvre toute la zone */
-            background-position: center; /* Centre l'image */
-            background-repeat: no-repeat;
-   padding-bottom: 80px;
-   color:black;
-
-}
-.service-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.service-list li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 8px;
-  background: linear-gradient(to bottom, #ffffff, #f1f1f1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-list li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2), inset 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.service-icon {
-  font-size: 1.8rem;
-  color: #007bff; /* Bootstrap primary color */
-  margin-right: 15px;
-}
-
-.service-list span {
-  font-size: 1.2rem;
-  color: #333;
-  font-weight: bold;
-}
-
-h2 {
-  color: #333;
-  font-size: 2rem;
-}
-#conct_bg{
-background-color: transparent;
-
-}
-#contact {
-  
-  background-image: url('imgcontact.png'); /* Remplacez par le chemin de votre image */
-            background-size: cover; /* Pour que l'image couvre toute la zone */
-            background-position: center; /* Centre l'image */
-            background-repeat: no-repeat;
-            color: white;
-            padding: 50px;
-            border-top:5px solid white;
-
-            border-bottom:5px solid white;
-}
-.cont_contact{
-  padding: 20px;
-  box-shadow: 2px 2px 15px rgba(0,0,0,.4);
-  background: rgba(0,0,0,.7);
-    overflow: hidden;
-    border-top:3px solid white;
-}
-#contact h4 {
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.btn-warning {
-  background-color: #ff9800;
-  border-color: #ff9800;
-  
-  box-shadow: 2px 2px 5px rgba(0,0,0,.8);
-}
-
-.btn-warning:hover {
-  background-color: #e68900;
-  border-color: #e68900;
-  border:2px solid white;
-}
-
-.form-control {
-  width: 100%; /* Assurez-vous que les champs de formulaire utilisent toute la largeur */
-}
-#textsendms{
-  font-family: "Josefin Sans", sans-serif;
-}
-.list-group-item{
-background-color: #fff !important; 
-}
-footer {
-  background-color: #1d1d1d;
-}
-
-footer h5 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-footer p {
-  font-size: 1rem;
-}
-
-footer a {
-  text-decoration: none;
-  color: #ffffff;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #007bff;
-}
-
-footer .social-icons a {
-  font-size: 1.5rem;
-  margin-right: 15px;
-  transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover {
-  color: #007bff;
-}
-
-footer .container {
-  max-width: 1200px;
-}
-
-footer ul {
-  padding-left: 0;
-  list-style-type: none;
-}
-
-footer ul li {
-  margin: 10px 0;
-}
-
-footer .row {
-  margin-bottom: 15px;
-}
-
-footer .text-center {
-  font-size: 0.9rem;
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: flex-start;
-}
+</body>
+</html>
