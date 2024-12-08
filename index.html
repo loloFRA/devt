@@ -1,307 +1,305 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dev bc</title>
+    <!-- SEO Meta Tags -->
+  <title>Électricité, vidéosurveillance, interphone, antenne, parabole et domotique</title>
+  <meta name="description" content="Installation et dépannage de vidéosurveillance, d'électricité, d'interphone, de domotique et d'antenne.">
+  <meta name="keywords" content="vidéo surveillance, électricité, interphone, antenne, domotique, parabole">
+  <meta name="author" content="Laurent">
+  <meta name="robots" content="index, follow">  
+  <!-- Dublin Core Metadata -->
+  <meta name="dc.title" content="Installation et dépannage de vidéosurveillance, d'électricité, d'interphone, de domotique et d'antenne">
+  <meta name="dc.language" content="fr">
+  <meta name="dc.source" content="https://www.dev.com">
+  <meta name="dc.relation" content="https://www.dev.com">
+  <meta name="dc.description" content="Installation et dépannage de vidéosurveillance, d'électricité, d'interphone, de domotique et d'antenne.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Électricité, vidéo surveillance, interphone, antenne, parabole et domotique">
+  <meta property="og:description" content="Installation et dépannage de vidéosurveillance, d'électricité, d'interphone, de domotique et d'antenne.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.dev.com">
+  <meta property="og:image" content="URL_de_votre_image_illustrative.jpg">
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- fonts CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
-<!-- Bootstrap Icons CDN -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- fonts Google -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- CSS local -->
   <link rel="stylesheet" href="tt.css">
+
   <!-- font-awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 </head>
-<body>
-
-  <header>
-    <nav class="navbar navbar-expand-lg transparent fixed-top" >
-      <div class="container">      
-        <div class="navbar-brand mx-auto" style="display: inline-flex; align-items: baseline;">      
-          <span  id="name_entreprise">Bienes</span><span id="name_connect">Connect</span>
-        </div>
-        <button class="btn btn-dark btn_menu d-flex justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"   aria-controls="offcanvasMenu">
-         ☰
-        </button>    
-      </div>
-    </nav>
-    <div class="img-container"></div>
-  </header>
-    
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <a class="choixmenu" href="#accueil"><i class="fas fa-angle-right" style="margin-right: 10px"></i>  Accueil</a>
-      <a class="choixmenu" href="#qui-sommes-nous"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Qui sommes-nous ?</a>
-      <a class="choixmenu" href="#"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Réalisations</a>
-      <a class="choixmenu" href="#"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Services</a>
-      <ul class="services-menu">
-        <li><a class="choixmenu" href="#service-videosurveillance"><i class="chxicon fas fa-video service-icon text-primary"></i> Vidéosurveillance</a></li>
-        <li><a class="choixmenu" href="#service-electricite"><i class=" chxicon fas fa-lightbulb service-icon text-warning"></i> Électricité</a></li>
-        <li><a class="choixmenu" href="#service-domotique"><i class="chxicon fas fa-home service-icon text-danger"></i> Domotique</a></li>
-        <li><a class="choixmenu" href="#service-antennes"><i class="chxicon fas fa-satellite-dish service-icon text-info"></i> Antennes</a></li>
-        <li><a class="choixmenu" href="#service-controle-acces"><i class="chxicon fas fa-lock service-icon text-success"></i> Contrôle d'accès</a></li>
-        <li><a class="choixmenu" href="#service-interphones"><i class="chxicon fas fa-phone service-icon text-secondary"></i> Interphones</a></li>
-      </ul>
-      <a class="choixmenu" href="#contact"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Contact</a>
-      <footer class="text-center py-3 mt-5" style="background-color: transparent;">
-        <p class="mb-0">Bienes Connect</p>
-      </footer>
-    </div>
-  </div>
-
-
-  <section>
-    <div id="accueil">
-      <div id="txt_accueil">
-        <h1>Une expertise au service de tous vos projets</h1>
-        <hr>
-        <p id="p_accueil">Spécialistes en installations et dépannages électriques, nous intervenons pour les particuliers, le collectif, et le tertiaire à Toulouse et ses environs</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="qui-sommes-nous" > 
-    <div class=" bg-light px-5">
-      <h2 class="text-center mb-4 py-5">Qui sommes-nous ?</h2>
-      <div class="row align-items-center" >
-          <div class="col-md-12" style="text-align: center;">
-            <p>Nous sommes une équipe soudée et passionnée, spécialisée dans les domaines de l’électricité, la vidéosurveillance, la domotique, les antennes et paraboles, le contrôle d’accès, ainsi que les interphones. Grâce à notre expertise, nous accompagnons nos clients particuliers, professionnels et collectivités dans tous leurs projets, en proposant des solutions modernes, fiables et adaptées à leurs besoins.</p>
-            <p>Notre mission est d’assurer la sécurité, le confort et la connectivité de vos espaces, tout en respectant les normes les plus exigeantes. Chaque membre de notre équipe partage un engagement commun : fournir un travail de qualité, basé sur l’innovation et la satisfaction de nos clients. Que ce soit pour une installation complète, une mise à jour de vos systèmes ou un dépannage, vous pouvez compter sur nous pour répondre à vos attentes avec professionnalisme et réactivité.</p>
-            <p>Ensemble, construisons des solutions qui vous simplifient la vie.</p>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg transparent fixed-top" >
+        <div class="container">      
+          <div class="navbar-brand mx-auto d-inline-flex align-items-baseline">      
+            <span  id="name_entreprise">Bienes</span><span id="name_connect">Connect</span>
           </div>
-          <div class="col-12 d-flex justify-content-center align-items-center">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-              <img src="imagequipe.jpg" alt="Notre équipe" class="img-fluid shadow d-block mx-auto" style="border-radius: 50%; width: 50%; height: auto;">
+          <button class="btn btn-dark btn_menu d-flex justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"   aria-controls="offcanvasMenu">
+           ☰
+          </button>    
+        </div>
+      </nav>
+      <div class="img-container"></div>
+    </header>
+
+    <!-- Menu -->  
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <a class="choixmenu" href="#accueil"><i class="fas fa-angle-right" style="margin-right: 10px"></i>  Accueil</a>
+        <a class="choixmenu" href="#qui-sommes-nous"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Qui sommes-nous ?</a>
+        <a class="choixmenu" href="#"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Réalisations</a>
+        <a class="choixmenu" href="#"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Services</a>
+        <ul class="services-menu">
+          <li><a class="choixmenu" href="#service-videosurveillance"><i class="chxicon fas fa-video service-icon text-primary"></i> Vidéosurveillance</a></li>
+          <li><a class="choixmenu" href="#service-electricite"><i class=" chxicon fas fa-lightbulb service-icon text-warning"></i> Électricité</a></li>
+          <li><a class="choixmenu" href="#service-domotique"><i class="chxicon fas fa-home service-icon text-danger"></i> Domotique</a></li>
+          <li><a class="choixmenu" href="#service-antennes"><i class="chxicon fas fa-satellite-dish service-icon text-info"></i> Antennes</a></li>
+          <li><a class="choixmenu" href="#service-controle-acces"><i class="chxicon fas fa-lock service-icon text-success"></i> Contrôle d'accès</a></li>
+          <li><a class="choixmenu" href="#service-interphones"><i class="chxicon fas fa-phone service-icon text-secondary"></i> Interphones</a></li>
+        </ul>
+        <a class="choixmenu" href="#contact"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Contact</a>
+        <footer class="text-center py-3 mt-5" style="background-color: transparent;">
+          <p class="mb-0">Bienes Connect</p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Accueil --> 
+    <section>
+      <div id="accueil">
+        <div id="txt_accueil">
+          <h1>Une expertise au service de tous vos projets</h1>
+          <hr>
+          <p id="p_accueil">Spécialistes en installations et dépannages électriques, nous intervenons pour les particuliers, le collectif, et le tertiaire à Toulouse et ses environs</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Qui sommes nous -->
+    <section id="qui-sommes-nous" > 
+      <div class=" bg-light px-5">
+        <h2 class="text-center mb-4 py-5">Qui sommes-nous ?</h2>
+        <div class="row align-items-center" >
+            <div class="col-md-12 text-center">
+              <p>Nous sommes une équipe soudée et passionnée, spécialisée dans les domaines de l’électricité, la vidéosurveillance, la domotique, les antennes et paraboles, le contrôle d’accès, ainsi que les interphones. Grâce à notre expertise, nous accompagnons nos clients particuliers, professionnels et collectivités dans tous leurs projets, en proposant des solutions modernes, fiables et adaptées à leurs besoins.</p>
+              <p>Notre mission est d’assurer la sécurité, le confort et la connectivité de vos espaces, tout en respectant les normes les plus exigeantes. Chaque membre de notre équipe partage un engagement commun : fournir un travail de qualité, basé sur l’innovation et la satisfaction de nos clients. Que ce soit pour une installation complète, une mise à jour de vos systèmes ou un dépannage, vous pouvez compter sur nous pour répondre à vos attentes avec professionnalisme et réactivité.</p>
+              <p>Ensemble, construisons des solutions qui vous simplifient la vie.</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                <img src="imagequipe.jpg" alt="Notre équipe" class="img-fluid shadow d-block mx-auto" style="border-radius: 50%; width: 50%; height: auto;">
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="cont-marg ">
+        <h2 class="text-center mb-4 josefont py-5" style="color:white;">Nos Services</h2>
+        <div class="row" style="margin-top: 50px">
+          <div class="col-md-6 ">
+            <ul class="service-list">
+              <li>
+                <i class="fas fa-video service-icon text-primary"></i>
+                <span>Vidéosurveillance</span>
+              </li>
+              <li>
+                <i class="fas fa-lightbulb service-icon text-warning"></i>
+                <span>Électricité</span>
+              </li>
+              <li>
+                <i class="fas fa-home service-icon text-danger"></i>
+                <span>Domotique</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="service-list">
+              <li>
+                <i class="fas fa-satellite-dish service-icon text-info"></i>
+                <span>Antennes</span>
+              </li>
+              <li>
+                <i class="fas fa-lock service-icon text-success"></i>
+                <span>Contrôle d'accès</span>
+              </li>
+              <li>
+                <i class="fas fa-phone service-icon text-secondary"></i>
+                <span>Interphones</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pourquoi -->
+    <section class=" d-flex align-items-center" style="min-height: 80vh; background: white">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4 josefont" >Pourquoi Nous Choisir ?</h2>
+        <ul class="list-group list-group-flush mx-auto bg-light" style="max-width: 600px; text-align: left;margin-top: 70px">
+          <li class="list-group-item">
+            <span style="color: green;">✔</span> Expertise locale à Toulouse et dans les villes environnantes
+          </li>
+          <li class="list-group-item">
+            <span style="color: green;">✔</span> Intervention rapide pour vos dépannages urgents
+          </li>
+          <li class="list-group-item">
+            <span style="color: green;">✔</span> Matériel de qualité et respect des normes
+          </li>
+          <li class="list-group-item">
+            <span style="color: green;">✔</span> Plus de 20 ans d'expérience dans le domaine
+          </li>
+          <li class="list-group-item">
+            <span style="color: green;">✔</span> Des solutions sur-mesure pour chaque client
+          </li>
+          <li class="list-group-item">
+            <span style="color: green;">✔</span> Service client réactif et à l'écoute de vos besoins
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Pourquoi -->
+    <section id="contact">
+      <div class="container py-5">
+        <div class="row d-flex flex-column align-items-center">
+          <div class="col-12 text-center mb-3 animate-on-scroll">
+            <h4 class="antonfont" style="font-size: 2em;">Contactez-nous</h4>
+            <p>Nous allons vous répondre au plus vite</p>
+          </div>
+          <div class="col-12 col-md-8 animate-on-scroll">
+            <form class="d-flex flex-column">
+              <!-- Nom -->
+              <div class="mb-3 animate-on-scroll">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Votre nom">
+              </div>
+              <div class="mb-3 animate-on-scroll">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Votre email">
+              </div>
+              <div class="mb-3 animate-on-scroll">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Votre message"></textarea>
+              </div>
+              <div class="text-end animate-on-scroll">
+                <button type="submit" class="btn btn-warning px-4 py-2">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="#accueil" id="scrollToTop" class="chevron ">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Nous Contacter</h5>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Électricité, Toulouse</p>
+            <p><i class="fas fa-phone-alt"></i> +33 1 23 45 67 89</p>
+            <p><i class="fas fa-envelope"></i> test.com</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Liens Utiles</h5>
+            <ul class="list-unstyled">
+              <li><a href="#accueil" class="text-white">Accueil</a></li>
+              <li><a href="#services" class="text-white">Nos Services</a></li>
+              <li><a href="#about" class="text-white">À Propos</a></li>
+              <li><a href="#contact" class="text-white">Contact</a></li>
+              <li><a href="#privacy" class="text-white">Politique de Confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Suivez-Nous</h5>
+            <div>
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="services">
-  <div class="cont-marg ">
-    <h2 class="text-center mb-4 josefont py-5" style="color:white;">Nos Services</h2>
-    <div class="row" style="margin-top: 50px">
-      <div class="col-md-6 ">
-        <ul class="service-list">
-          <li>
-            <i class="fas fa-video service-icon text-primary"></i>
-            <span>Vidéosurveillance</span>
-          </li>
-          <li>
-            <i class="fas fa-lightbulb service-icon text-warning"></i>
-            <span>Électricité</span>
-          </li>
-          <li>
-            <i class="fas fa-home service-icon text-danger"></i>
-            <span>Domotique</span>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <ul class="service-list">
-          <li>
-            <i class="fas fa-satellite-dish service-icon text-info"></i>
-            <span>Antennes</span>
-          </li>
-          <li>
-            <i class="fas fa-lock service-icon text-success"></i>
-            <span>Contrôle d'accès</span>
-          </li>
-          <li>
-            <i class="fas fa-phone service-icon text-secondary"></i>
-            <span>Interphones</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class=" d-flex align-items-center" style="min-height: 80vh; background: white">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4 josefont" >Pourquoi Nous Choisir ?</h2>
-    <ul class="list-group list-group-flush mx-auto bg-light" style="max-width: 600px; text-align: left;margin-top: 70px">
-      <li class="list-group-item">
-        <span style="color: green;">✔</span> Expertise locale à Toulouse et dans les villes environnantes
-      </li>
-      <li class="list-group-item">
-        <span style="color: green;">✔</span> Intervention rapide pour vos dépannages urgents
-      </li>
-      <li class="list-group-item">
-        <span style="color: green;">✔</span> Matériel de qualité et respect des normes
-      </li>
-      <li class="list-group-item">
-        <span style="color: green;">✔</span> Plus de 20 ans d'expérience dans le domaine
-      </li>
-      <li class="list-group-item">
-        <span style="color: green;">✔</span> Des solutions sur-mesure pour chaque client
-      </li>
-      <li class="list-group-item">
-        <span style="color: green;">✔</span> Service client réactif et à l'écoute de vos besoins
-      </li>
-    </ul>
-  </div>
-</section>
-
-
-<!-- contact -->
-<section id="contact">
-  <div class="container py-5">
-    <div class="row d-flex flex-column align-items-center">
-      <!-- Texte principal -->
-      <div class="col-12 text-center mb-3 animate-on-scroll">
-        <h4 class="antonfont" style="font-size: 2em;">Contactez-nous</h4>
-        <p>Nous allons vous répondre au plus vite</p>
-      </div>
-      <!-- Formulaire -->
-      <div class="col-12 col-md-8 animate-on-scroll">
-        <form class="d-flex flex-column">
-          <!-- Nom -->
-          <div class="mb-3 animate-on-scroll">
-            <label for="name" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="name" placeholder="Votre nom">
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <p>&copy; 2024 Bienes Connect - Tous droits réservés.</p>
           </div>
-          <!-- Email -->
-          <div class="mb-3 animate-on-scroll">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Votre email">
-          </div>
-          <!-- Message -->
-          <div class="mb-3 animate-on-scroll">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Votre message"></textarea>
-          </div>
-          <!-- Bouton Envoyer -->
-          <div class="text-end animate-on-scroll">
-            <button type="submit" class="btn btn-warning px-4 py-2">Envoyer</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <a href="#accueil" id="scrollToTop" class="chevron ">
-    <i class="fas fa-chevron-up"></i>
-  </a>
-
-
-
-
-
-<footer class="bg-dark text-white pt-5 pb-4 ">
-  <div class="container">
-    <div class="row">
-      <!-- Colonne Contact -->
-      <div class="col-md-4 mb-4">
-        <h5 class="mb-3">Nous Contacter</h5>
-        <p><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Électricité, Toulouse</p>
-        <p><i class="fas fa-phone-alt"></i> +33 1 23 45 67 89</p>
-        <p><i class="fas fa-envelope"></i> test.com</p>
-      </div>
-
-      <!-- Colonne Liens Importants -->
-      <div class="col-md-4 mb-4">
-        <h5 class="mb-3">Liens Utiles</h5>
-        <ul class="list-unstyled">
-          <li><a href="#accueil" class="text-white">Accueil</a></li>
-          <li><a href="#services" class="text-white">Nos Services</a></li>
-          <li><a href="#about" class="text-white">À Propos</a></li>
-          <li><a href="#contact" class="text-white">Contact</a></li>
-          <li><a href="#privacy" class="text-white">Politique de Confidentialité</a></li>
-        </ul>
-      </div>
-
-      <!-- Colonne Réseaux Sociaux -->
-      <div class="col-md-4 mb-4">
-        <h5 class="mb-3">Suivez-Nous</h5>
-        <div>
-          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-    </div>
-    
-    <!-- Copyright Section -->
-    <div class="row mt-4">
-      <div class="col-12 text-center">
-        <p>&copy; 2024 Bienes Connect - Tous droits réservés.</p>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+      //close btn menu
+      $('.choixmenu').on('click', () => $('.btn_menu').click());
+      //scroll listener
+      window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        const brand = document.querySelector('.navbar-brand');
+        const nameEntreprise = document.getElementById('name_entreprise');
+        const btnMenu = document.querySelector('.btn_menu'); 
+        const chevron = document.querySelector('.chevron');
+
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+        navbar.classList.remove('transparent');
+        brand.classList.add('scrolled');
+        btnMenu.classList.add('btn_scrolled'); 
+        chevron.classList.add('show'); 
 
 
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"></script>
-  <script>
-
-    $('.choixmenu').on('click', () => $('.btn_menu').click());
-
-    window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-      const brand = document.querySelector('.navbar-brand');
-      const nameEntreprise = document.getElementById('name_entreprise');
-      const btnMenu = document.querySelector('.btn_menu'); 
-      const chevron = document.querySelector('.chevron');
-
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
-      navbar.classList.remove('transparent');
-      brand.classList.add('scrolled');
-      btnMenu.classList.add('btn_scrolled'); 
-      chevron.classList.add('show'); 
-
-
-    } else {
-      navbar.classList.add('transparent');
-      navbar.classList.remove('scrolled');
-      brand.classList.remove('scrolled');
-      btnMenu.classList.remove('btn_scrolled'); 
-      chevron.classList.remove('show');
-      }
+      } else {
+        navbar.classList.add('transparent');
+        navbar.classList.remove('scrolled');
+        brand.classList.remove('scrolled');
+        btnMenu.classList.remove('btn_scrolled'); 
+        chevron.classList.remove('show');
+        }
       });
+      //scroll animated
+      document.addEventListener("DOMContentLoaded", () => {
+        const animatedElements = document.querySelectorAll(".animate-on-scroll");
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); 
+            }
+          });
+        });
+        animatedElements.forEach((el) => observer.observe(el));
+      });
+    </script>
 
-    document.addEventListener("DOMContentLoaded", () => {
-  const animatedElements = document.querySelectorAll(".animate-on-scroll");
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target); // Une fois visible, on arrête d'observer
-      }
-    });
-  });
-
-  animatedElements.forEach((el) => observer.observe(el));
-});
-
-  </script>
-
-</body>
+  </body>
 </html>
