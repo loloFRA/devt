@@ -16,10 +16,6 @@ body {
   background: #e8e8e8 !important;
 }
 
-#hrperso{
-  width: 40%;
-  color: black;
-}
 .bg-light {
   background-color: #e8e8e8 !important; 
 }
@@ -276,7 +272,7 @@ body {
   position: relative;
   z-index: 2;  /* Assurez-vous que cette section soit au-dessus de #accueil */
 font-family: "Josefin Sans", sans-serif;
-margin-bottom: 20px;
+margin-bottom: 70px;
 }
 
 .josefont{
