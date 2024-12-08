@@ -63,7 +63,7 @@ body {
     .offcanvas-body a {
       color: black;
       text-decoration: none;
-      margin: 15px 0;
+      margin: 5px 0;
       display: block;
       font-size: 1.5rem;
     }
@@ -75,16 +75,15 @@ body {
 .offcanvas-body {
   background: #f0f4f8; /* Fond léger et neutre, moins chaud */
   color: #000; /* Texte sombre pour un bon contraste */
-  padding: 20px; /* Espacement interne */
-  border-radius: 10px; /* Coins arrondis */
+  padding: 5px; /* Espacement interne */ /* Coins arrondis */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
 }
 
 /* Liens principaux */
 .choixmenu {
   display: block; /* Chaque lien sur une nouvelle ligne */
-  padding: 6px 10px; /* Espacement interne */
-  margin-bottom: 12px; /* Espacement entre les liens */
+  padding: 3px 5px; /* Espacement interne */
+  margin-bottom: 3px; /* Espacement entre les liens */
   color: #000; /* Texte sombre */
   text-decoration: none; /* Pas de soulignement */
   border-radius: 5px; /* Coins arrondis */
@@ -97,7 +96,9 @@ body {
   color: #007BFF; /* Change la couleur du texte au survol */
   transform: scale(1.05); /* Légère mise en valeur */
 }
-
+.chxicon{
+  width: 30px;
+}
 /* Liste des services */
 .services-menu {
   list-style: none; /* Supprime les puces */
@@ -105,7 +106,8 @@ body {
 }
 
 .services-menu li {
-  margin-bottom: 6px; /* Espacement entre chaque service */
+  margin-bottom: 3px; /* Espacement entre chaque service */
+  margin-left:20px;
 }
 
 /* Icônes des services */
@@ -207,8 +209,8 @@ body {
     transform: scale(1.1);
     -webkit-animation-name: zoomIn_header;
     animation-name: zoomIn_header;
-    -webkit-animation-duration: 2.5s;
-    animation-duration: 2.5s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     -webkit-animation-delay: .5s;
@@ -222,18 +224,18 @@ body {
     -webkit-animation-play-state: running;
     animation-play-state: running;
     background-image: url('bgtest.png');
-    -webkit-filter: blur(15px); /* For Safari and older Webkit browsers */
-            filter: blur(15px);        /* Standard property */
-            -webkit-transform: scale(1.5);
-        transform: scale(1.5)
+    -webkit-filter: blur(10px); /* For Safari and older Webkit browsers */
+            filter: blur(10px);        /* Standard property */
+            -webkit-transform: scale(1.4);
+        transform: scale(1.4)
 }
 
 @keyframes zoomIn_header {
     0% {
         -webkit-transform: scale(1.5);
         transform: scale(1.5)
-        -webkit-filter: blur(15px); /* For Safari and older Webkit browsers */
-            filter: blur(15px);        /* Standard property */
+        -webkit-filter: blur(10px); /* For Safari and older Webkit browsers */
+            filter: blur(10px);        /* Standard property */
     }
 
     100% {
