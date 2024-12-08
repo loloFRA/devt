@@ -327,13 +327,17 @@ background-color: transparent;
             background-position: center; /* Centre l'image */
             background-repeat: no-repeat;
             color: white;
-            padding: 50px
+            padding: 50px;
+            border-top:5px solid white;
+
+            border-bottom:5px solid white;
 }
 .cont_contact{
   padding: 20px;
   box-shadow: 2px 2px 15px rgba(0,0,0,.4);
   background: rgba(0,0,0,.7);
     overflow: hidden;
+    border-top:3px solid white;
 }
 #contact h4 {
   font-weight: bold;
@@ -343,11 +347,14 @@ background-color: transparent;
 .btn-warning {
   background-color: #ff9800;
   border-color: #ff9800;
+  
+  box-shadow: 2px 2px 5px rgba(0,0,0,.8);
 }
 
 .btn-warning:hover {
   background-color: #e68900;
   border-color: #e68900;
+  border:2px solid white;
 }
 
 .form-control {
