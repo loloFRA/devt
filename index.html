@@ -47,9 +47,11 @@
     <header>
       <nav class="navbar navbar-expand-lg transparent fixed-top" >
         <div class="container">      
-          <div class="navbar-brand mx-auto d-inline-flex align-items-baseline">      
-            <span  id="name_entreprise">Bienes</span><span id="name_connect">Connect</span>
-          </div>
+          <div class="navbar-brand mx-auto d-inline-flex align-items">   
+            <img src="logo-petale-blanche-fond-vert.jpg" alt="logo-bienes-connect" id="imglogo" class="img-fluid">   
+            <span style="display: none" id="name_entreprise">Bienes</span>
+            <span style="display: none" id="name_connect">Connect</span>
+        </div>
           <button class="btn btn-dark btn_menu d-flex justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"   aria-controls="offcanvasMenu">
            ☰
           </button>    
@@ -117,7 +119,7 @@
     <!-- Services -->
     <section id="services">
       <div class="cont-marg ">
-        <h2 class="text-center mb-4 josefont py-5" style="color:white;">Nos Services</h2>
+        <h2 class="text-center mb-4 antonfont py-5" style="color:white;">Nos Services</h2>
         <div class="row" style="margin-top: 50px">
           <div class="col-md-6 ">
             <ul class="service-list">
@@ -158,7 +160,7 @@
     <!-- Pourquoi -->
     <section class=" d-flex align-items-center" style="min-height: 80vh; background: white">
       <div class="container text-center">
-        <h2 class="fw-bold mb-4 josefont" >Pourquoi Nous Choisir ?</h2>
+        <h2 class="fw-bold mb-4 antonfont" >Pourquoi Nous Choisir ?</h2>
         <ul class="list-group list-group-flush mx-auto bg-light" style="max-width: 600px; text-align: left;margin-top: 70px">
           <li class="list-group-item">
             <span style="color: green;">✔</span> Expertise locale à Toulouse et dans les villes environnantes
@@ -266,26 +268,35 @@
       window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
         const brand = document.querySelector('.navbar-brand');
-        const nameEntreprise = document.getElementById('name_entreprise');
+        const imgLogo = document.getElementById('imglogo');
         const btnMenu = document.querySelector('.btn_menu'); 
         const chevron = document.querySelector('.chevron');
 
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-        navbar.classList.remove('transparent');
-        brand.classList.add('scrolled');
-        btnMenu.classList.add('btn_scrolled'); 
-        chevron.classList.add('show'); 
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+            navbar.classList.remove('transparent');
+            brand.classList.add('scrolled');
+            btnMenu.classList.add('btn_scrolled'); 
+            chevron.classList.add('show'); 
 
+            // Changer la source et ajuster la taille de l'image
+            imgLogo.src = 'imgBC.png'; // Remplacez par le chemin de votre image réduite
+            name_entreprise.style.display = "block"
+            name_connect.style.display = "block"
+        } else {
+            navbar.classList.add('transparent');
+            navbar.classList.remove('scrolled');
+            brand.classList.remove('scrolled');
+            btnMenu.classList.remove('btn_scrolled'); 
+            chevron.classList.remove('show');
 
-      } else {
-        navbar.classList.add('transparent');
-        navbar.classList.remove('scrolled');
-        brand.classList.remove('scrolled');
-        btnMenu.classList.remove('btn_scrolled'); 
-        chevron.classList.remove('show');
+            // Réinitialiser la source et la taille de l'image
+            imgLogo.src = 'logo-petale-blanche-fond-vert.jpg'; // Remplacez par l'image d'origine
+            name_entreprise.style.display = "none"
+            name_connect.style.display = "none"
         }
       });
+
       //scroll animated
       document.addEventListener("DOMContentLoaded", () => {
         const animatedElements = document.querySelectorAll(".animate-on-scroll");
