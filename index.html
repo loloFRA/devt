@@ -313,7 +313,10 @@
         animatedElements.forEach((el) => observer.observe(el));
       });
 
-      
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top - 60 // Ajustez cette valeur selon la hauteur de votre en-tête fixe
+      }, 1000);
+
     </script>
 
   </body>
