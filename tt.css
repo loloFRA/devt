@@ -2,6 +2,8 @@ html, body {
   height: 100%; 
   margin: 0;
   padding: 0;
+  scroll-padding-top: 70px; 
+  scroll-behavior: smooth; 
 }
 
 body {
@@ -10,9 +12,6 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background: #fff;
-  overflow-x: hidden;
-}
-header{
   overflow-x: hidden;
 }
 .antonfont{
@@ -78,6 +77,17 @@ header{
   padding: 5px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   z-index: 1000;
+}
+
+.offcanvas {
+  transform: translateX(100%);  
+  opacity: 0;  
+  transition: transform 0.5s ease, opacity 0.5s ease;  
+}
+
+.offcanvas.show {
+  transform: translateX(0);  
+  opacity: 1;  
 }
 
 .choixmenu {
