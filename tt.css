@@ -2,7 +2,6 @@ html, body {
   height: 100%; 
   margin: 0;
   padding: 0;
-  scroll-padding-top: 70px; 
   scroll-behavior: smooth; 
 }
 
@@ -410,14 +409,6 @@ h2 {
   padding: 50px;
   border-top:5px solid white;
   border-bottom:5px solid white;
-}
-
-.cont_contact{
-  padding: 20px;
-  box-shadow: 2px 2px 15px rgba(0,0,0,.4);
-  background: rgba(0,0,0,.7);
-  overflow: hidden;
-  border-top:3px solid white;
 }
 
 #contact h4 {
