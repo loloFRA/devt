@@ -139,7 +139,6 @@ body {
 #imglogo {
     max-width: 150px; 
     height: auto; 
-    border-radius: 5%
 }
 
 @media (min-width: 768px) {
@@ -158,19 +157,17 @@ body {
     max-width: 50px; 
     height: auto;
 }
-
+#imglogo-nav{
+      max-width: 50px; 
+    height: auto; 
+}
 #name_entreprise{
-  font-family: "Anton SC", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.3em;
   vertical-align: baseline;
-}
-#name_connect{
-  font-family: "Lobster", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.1em;
+  display: none
 }
 @media (min-width: 992px) {
   #name_entreprise {
@@ -181,17 +178,6 @@ body {
 @media (min-width: 1200px) {
   #name_entreprise {
     font-size: 2em; 
-  }
-}
- @media (min-width: 992px) {
-  #name_connect {
-    font-size: 1.5em;
-  }
-}
-
-@media (min-width: 1200px) {
-  #name_connect {
-    font-size: 1.8em; 
   }
 }
 
