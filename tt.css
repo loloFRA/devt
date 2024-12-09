@@ -81,7 +81,7 @@ body {
 .offcanvas {
   transform: translateX(100%);  
   opacity: 0;  
-  transition: transform 0.5s ease, opacity 0.5s ease;  
+  transition: transform 0.2s ease, opacity 0.5s ease;  
 }
 
 .offcanvas.show {
