@@ -317,6 +317,27 @@
         scrollTop: target.offset().top - 60 // Ajustez cette valeur selon la hauteur de votre en-tête fixe
       }, 1000);
 
+      // Attache un écouteur d'événement aux liens d'ancre
+      document.querySelectorAll('.choixmenu').forEach(link => {
+          link.addEventListener('click', function(event) {
+              event.preventDefault(); // Empêche l'action par défaut (défilement instantané)
+              
+              // Récupère l'ID de l'ancre cible
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+
+              // Si l'élément cible existe
+              if (targetElement) {
+                  // Effectue un défilement vers l'élément cible avec une animation
+                  window.scrollTo({
+                      top: targetElement.offsetTop - 60, // Vous pouvez ajuster le -60 pour un en-tête fixe
+                      behavior: 'smooth' // Utilisation du défilement fluide
+                  });
+              }
+          });
+      });
+
+
     </script>
 
   </body>
