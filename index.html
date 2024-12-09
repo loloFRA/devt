@@ -47,11 +47,12 @@
     <header>
       <nav class="navbar navbar-expand-lg transparent fixed-top" >
         <div class="container">      
-          <div class="navbar-brand mx-auto d-inline-flex align-items">   
-            <img src="logo-petale-blanche-fond-vert.jpg" alt="logo-bienes-connect" id="imglogo" class="img-fluid">   
-            <span style="display: none" id="name_entreprise">Bienes</span>
-            <span style="display: none" id="name_connect">Connect</span>
-        </div>
+          <div class="navbar-brand mx-auto d-inline-flex align-items">  
+            <div id="name_entreprise" >
+              <img src="imgBC.png" alt="logo-bienes-connect" id="imglogo-nav" class="img-fluid">   
+              <span>Bienes-connect</span> 
+            </div>        
+          </div>
           <button class="btn btn-dark btn_menu d-flex justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"   aria-controls="offcanvasMenu">
            ☰
           </button>    
@@ -90,6 +91,10 @@
     <section>
       <div id="accueil">
         <div id="txt_accueil">
+          <img src="logo-couleurs-fond-transparent.png" alt="logo-bienes-connect" id="imglogo" class="img-fluid"> 
+          <br>
+          <br>
+          <br>
           <h1>Une expertise au service de tous vos projets</h1>
           <hr>
           <p id="p_accueil">Spécialistes en installations et dépannages électriques, nous intervenons pour les particuliers, le collectif, et le tertiaire à Toulouse et ses environs</p>
@@ -278,18 +283,14 @@
             brand.classList.add('scrolled');
             btnMenu.classList.add('btn_scrolled'); 
             chevron.classList.add('show'); 
-            imgLogo.src = 'imgBC.png';
             name_entreprise.style.display = "block"
-            name_connect.style.display = "block"
         } else {
             navbar.classList.add('transparent');
             navbar.classList.remove('scrolled');
             brand.classList.remove('scrolled');
             btnMenu.classList.remove('btn_scrolled'); 
             chevron.classList.remove('show');
-            imgLogo.src = 'logo-petale-blanche-fond-vert.jpg'; 
             name_entreprise.style.display = "none"
-            name_connect.style.display = "none"
         }
       });
 
