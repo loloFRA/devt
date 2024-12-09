@@ -112,7 +112,6 @@ body {
   font-size: 1.2em; 
 }
 
-
 .text-primary {
   color: #007BFF; 
 }
@@ -161,11 +160,12 @@ body {
       max-width: 50px; 
     height: auto; 
 }
+
 #name_entreprise{
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.3em;
+  font-size: 1.5em;
   vertical-align: baseline;
   display: none
 }
