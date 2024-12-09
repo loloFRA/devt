@@ -45,20 +45,22 @@
   <body>
     <!-- Header -->
     <header>
-      <nav class="navbar navbar-expand-lg transparent fixed-top" >
-        <div class="container">      
-          <div class="navbar-brand mx-auto d-inline-flex align-items">  
-            <div id="name_entreprise" >
-              <img src="imgBC.png" alt="logo-bienes-connect" id="imglogo-nav" class="img-fluid">   
-              <span>Bienes-connect</span> 
-            </div>        
+      <div style="overflow-x: hidden;">
+        <nav class="navbar navbar-expand-lg transparent fixed-top" >
+          <div class="container">      
+            <div class="navbar-brand mx-auto d-inline-flex align-items">  
+              <div id="name_entreprise" >
+                <img src="imgBC.png" alt="logo-bienes-connect" id="imglogo-nav" class="img-fluid">   
+                <span>Bienes-connect</span> 
+              </div>        
+            </div>
+            <button class="btn btn-dark btn_menu d-flex justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"   aria-controls="offcanvasMenu">
+             ☰
+            </button>    
           </div>
-          <button class="btn btn-dark btn_menu d-flex justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"   aria-controls="offcanvasMenu">
-           ☰
-          </button>    
-        </div>
         </nav>
       <div class="img-container"></div>
+      </div>
     </header>
 
     <!-- Menu -->  
@@ -268,7 +270,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
       //close btn menu
-      $('.choixmenu').on('click', () => $('.btn_menu').click());
+      $('.choixmenu').on('click', function() {
+        $('.btn_menu').click(); // Ferme le menu
+      });
+
       //scroll listener
       window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
@@ -307,6 +312,8 @@
         });
         animatedElements.forEach((el) => observer.observe(el));
       });
+
+      
     </script>
 
   </body>
