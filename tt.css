@@ -21,7 +21,9 @@ body {
 .bg-light {
   background-color: #fff !important; 
 }
-
+#h1-accueil{
+  font-family: "Noto Sans", serif;
+}
 .navbar {
   transition: all 0.4s ease;
 }
