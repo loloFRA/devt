@@ -141,15 +141,16 @@ body {
   font-family: "Anton SC", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.3em;
+  font-size: 1.5em;
   vertical-align: baseline;
-  display: none
+  display: none;
+  color:white;
 }
 #name_connect{
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 @media (min-width: 992px) {
   #name_entreprise {
@@ -162,21 +163,10 @@ body {
     font-size: 2em; 
   }
 }
- @media (min-width: 992px) {
-  #name_connect {
-    font-size: 1.5em;
-  }
-}
 
-@media (min-width: 1200px) {
-  #name_connect {
-    font-size: 1.8em; 
-  }
-}
 
 .btn_scrolled {
   color: white !important; 
-  font-size: 1.5em;
 }
 
 #logo{
@@ -545,17 +535,12 @@ footer .social-icons {
 }
 
 .navbar-brand.scrolled #imglogo {
-    max-width: 50px; 
-    height: auto;
-     margin: 0; 
-}
-.navbar-brand.scrolled #imglogo {
-    max-width: 50px; 
+    max-width: 40px; 
     height: auto;
      margin: 0; 
 }
 #imglogo-nav{
-      max-width: 50px; 
+      max-width: 40px; 
     height: auto; 
      margin: 0; 
 }
