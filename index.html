@@ -47,15 +47,19 @@
     <!-- Header -->
     <header>
       <nav class="navbar navbar-expand-lg transparent fixed-top" >
-        <div class="container">      
-          <div class="navbar-brand mx-auto d-inline-flex align-items-baseline">      
-            <span  id="name_entreprise">Bienes</span><span id="name_connect">Connect</span>
+          <div class="container">      
+            <div class="navbar-brand mx-auto d-inline-flex align-items">  
+              <div id="name_entreprise" >
+                <img src="imgBC.png" alt="logo-bienes-connect" id="imglogo-nav" class="img-fluid">   
+                <span>Bienes-connect</span> 
+              </div>        
+            </div>
+            <button class="btn btn-dark btn_menu d-flex justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"   aria-controls="offcanvasMenu">
+             ☰
+            </button>    
           </div>
-          <button class="btn btn-dark btn_menu d-flex justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"   aria-controls="offcanvasMenu">
-           ☰
-          </button>    
-        </div>
       </nav>
+
       <div class="img-container"></div>
     </header>
 
@@ -69,7 +73,7 @@
         <a class="choixmenu" href="#accueil"><i class="fas fa-angle-right" style="margin-right: 10px"></i>  Accueil</a>
         <a class="choixmenu" href="#qui-sommes-nous"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Qui sommes-nous ?</a>
         <a class="choixmenu" href="#"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Réalisations</a>
-        <a class="choixmenu" href="#"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Services</a>
+        <a class="choixmenu" href="#services"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Services</a>
         <ul class="services-menu">
           <li><a class="choixmenu" href="#service-videosurveillance"><i class="chxicon fas fa-video service-icon text-primary"></i> Vidéosurveillance</a></li>
           <li><a class="choixmenu" href="#service-electricite"><i class=" chxicon fas fa-lightbulb service-icon text-warning"></i> Électricité</a></li>
@@ -89,6 +93,10 @@
     <section>
       <div id="accueil">
         <div id="txt_accueil">
+          <img src="logo-couleurs-fond-transparent.png" alt="logo-bienes-connect" id="imglogo" class="img-fluid"> 
+          <br>
+          <br>
+          <br>
           <h1>Une expertise au service de tous vos projets</h1>
           <hr>
           <p id="p_accueil">Spécialistes en installations et dépannages électriques, nous intervenons pour les particuliers, le collectif, et le tertiaire à Toulouse et ses environs</p>
@@ -277,7 +285,7 @@
         brand.classList.add('scrolled');
         btnMenu.classList.add('btn_scrolled'); 
         chevron.classList.add('show'); 
-
+          nameEntreprise.style.display = "block"
 
       } else {
         navbar.classList.add('transparent');
@@ -285,6 +293,7 @@
         brand.classList.remove('scrolled');
         btnMenu.classList.remove('btn_scrolled'); 
         chevron.classList.remove('show');
+       nameEntreprise.style.display = "none"
         }
       });
       //scroll animated
