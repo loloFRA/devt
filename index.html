@@ -322,6 +322,29 @@
             });
           });
       });
+      
+      // Animated menu
+      const offcanvas = document.getElementById('offcanvasMenu');
+      const choixMenuElements = document.querySelectorAll('.choixmenu');
+
+      offcanvas.addEventListener('shown.bs.offcanvas', function () {
+        choixMenuElements.forEach((link, index) => {
+          link.style.opacity = '0';
+          link.style.transform = 'translateY(20px)';
+          link.style.transitionDelay = '0s';
+          link.offsetHeight; 
+          link.style.transitionDelay = `${0.1 * index}s`; 
+          link.style.opacity = '1';
+          link.style.transform = 'translateY(0)';
+        });
+      });
+
+      offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+        choixMenuElements.forEach((link) => {
+          link.style.opacity = '0';
+          link.style.transform = 'translateY(20px)';
+        });
+      });
         
     </script>
 
