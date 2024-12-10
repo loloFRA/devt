@@ -143,6 +143,7 @@ body {
   font-style: normal;
   font-size: 1.3em;
   vertical-align: baseline;
+  display: none
 }
 #name_connect{
   font-family: "Lobster", sans-serif;
@@ -524,4 +525,37 @@ footer .social-icons {
 .chevron.show {
   opacity: 1;
   visibility: visible;
+}
+
+#imglogo {
+    max-width: 150px; 
+    height: auto; 
+}
+
+@media (min-width: 768px) {
+    #imglogo {
+        max-width: 250px; 
+    }
+}
+
+@media (min-width: 1200px) {
+    #imglogo {
+        max-width: 300px; 
+    }
+}
+
+.navbar-brand.scrolled #imglogo {
+    max-width: 50px; 
+    height: auto;
+     margin: 0; 
+}
+.navbar-brand.scrolled #imglogo {
+    max-width: 50px; 
+    height: auto;
+     margin: 0; 
+}
+#imglogo-nav{
+      max-width: 50px; 
+    height: auto; 
+     margin: 0; 
 }
