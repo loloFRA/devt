@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -45,20 +46,17 @@
   <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg transparent fixed-top" >
-          <div class="container">      
-            <div class="navbar-brand mx-auto d-inline-flex align-items">  
-              <div id="name_entreprise" >
-                <img src="imgBC.png" alt="logo-bienes-connect" id="imglogo-nav" class="img-fluid">   
-                <span>Bienes-connect</span> 
-              </div>        
-            </div>
-            <button class="btn btn-dark btn_menu d-flex justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"   aria-controls="offcanvasMenu">
-             ☰
-            </button>    
+      <nav class="navbar navbar-expand-lg transparent fixed-top" >
+        <div class="container">      
+          <div class="navbar-brand mx-auto d-inline-flex align-items-baseline">      
+            <span  id="name_entreprise">Bienes</span><span id="name_connect">Connect</span>
           </div>
-        </nav>
-        <div class="img-container"></div>
+          <button class="btn btn-dark btn_menu d-flex justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"   aria-controls="offcanvasMenu">
+           ☰
+          </button>    
+        </div>
+      </nav>
+      <div class="img-container"></div>
     </header>
 
     <!-- Menu -->  
@@ -71,7 +69,7 @@
         <a class="choixmenu" href="#accueil"><i class="fas fa-angle-right" style="margin-right: 10px"></i>  Accueil</a>
         <a class="choixmenu" href="#qui-sommes-nous"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Qui sommes-nous ?</a>
         <a class="choixmenu" href="#"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Réalisations</a>
-        <a class="choixmenu" href="#services"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Services</a>
+        <a class="choixmenu" href="#"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Services</a>
         <ul class="services-menu">
           <li><a class="choixmenu" href="#service-videosurveillance"><i class="chxicon fas fa-video service-icon text-primary"></i> Vidéosurveillance</a></li>
           <li><a class="choixmenu" href="#service-electricite"><i class=" chxicon fas fa-lightbulb service-icon text-warning"></i> Électricité</a></li>
@@ -91,10 +89,6 @@
     <section>
       <div id="accueil">
         <div id="txt_accueil">
-          <img src="logo-couleurs-fond-transparent.png" alt="logo-bienes-connect" id="imglogo" class="img-fluid"> 
-          <br>
-          <br>
-          <br>
           <h1>Une expertise au service de tous vos projets</h1>
           <hr>
           <p id="p_accueil">Spécialistes en installations et dépannages électriques, nous intervenons pour les particuliers, le collectif, et le tertiaire à Toulouse et ses environs</p>
@@ -105,7 +99,7 @@
     <!-- Qui sommes nous -->
     <section id="qui-sommes-nous" > 
       <div class=" bg-light px-5">
-        <h2 class="text-center mb-4 py-3">Qui sommes-nous ?</h2>
+        <h2 class="text-center mb-4 py-5">Qui sommes-nous ?</h2>
         <div class="row align-items-center" >
             <div class="col-md-12 text-center">
               <p>Nous sommes une équipe soudée et passionnée, spécialisée dans les domaines de l’électricité, la vidéosurveillance, la domotique, les antennes et paraboles, le contrôle d’accès, ainsi que les interphones. Grâce à notre expertise, nous accompagnons nos clients particuliers, professionnels et collectivités dans tous leurs projets, en proposant des solutions modernes, fiables et adaptées à leurs besoins.</p>
@@ -123,9 +117,9 @@
 
     <!-- Services -->
     <section id="services">
-      <div>
-        <h2 class="text-center mb-4 antonfont" style="color:white;padding-bottom: 70px;padding-top: 50px">Nos Services</h2>
-        <div class="row  px-4">
+      <div class="cont-marg ">
+        <h2 class="text-center mb-4 josefont py-5" style="color:white;">Nos Services</h2>
+        <div class="row" style="margin-top: 50px">
           <div class="col-md-6 ">
             <ul class="service-list">
               <li>
@@ -165,7 +159,7 @@
     <!-- Pourquoi -->
     <section class=" d-flex align-items-center" style="min-height: 80vh; background: white">
       <div class="container text-center">
-        <h2 class="fw-bold mb-4 antonfont" >Pourquoi Nous Choisir ?</h2>
+        <h2 class="fw-bold mb-4 josefont" >Pourquoi Nous Choisir ?</h2>
         <ul class="list-group list-group-flush mx-auto bg-light" style="max-width: 600px; text-align: left;margin-top: 70px">
           <li class="list-group-item">
             <span style="color: green;">✔</span> Expertise locale à Toulouse et dans les villes environnantes
@@ -268,35 +262,31 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
       //close btn menu
-      $('.choixmenu').on('click', function() {
-        $('.btn_menu').click(); // Ferme le menu
-      });
-
+      $('.choixmenu').on('click', () => $('.btn_menu').click());
       //scroll listener
       window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
         const brand = document.querySelector('.navbar-brand');
-        const imgLogo = document.getElementById('imglogo');
+        const nameEntreprise = document.getElementById('name_entreprise');
         const btnMenu = document.querySelector('.btn_menu'); 
         const chevron = document.querySelector('.chevron');
 
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-            navbar.classList.remove('transparent');
-            brand.classList.add('scrolled');
-            btnMenu.classList.add('btn_scrolled'); 
-            chevron.classList.add('show'); 
-            name_entreprise.style.display = "block"
-        } else {
-            navbar.classList.add('transparent');
-            navbar.classList.remove('scrolled');
-            brand.classList.remove('scrolled');
-            btnMenu.classList.remove('btn_scrolled'); 
-            chevron.classList.remove('show');
-            name_entreprise.style.display = "none"
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+        navbar.classList.remove('transparent');
+        brand.classList.add('scrolled');
+        btnMenu.classList.add('btn_scrolled'); 
+        chevron.classList.add('show'); 
+
+
+      } else {
+        navbar.classList.add('transparent');
+        navbar.classList.remove('scrolled');
+        brand.classList.remove('scrolled');
+        btnMenu.classList.remove('btn_scrolled'); 
+        chevron.classList.remove('show');
         }
       });
-
       //scroll animated
       document.addEventListener("DOMContentLoaded", () => {
         const animatedElements = document.querySelectorAll(".animate-on-scroll");
@@ -310,32 +300,6 @@
         });
         animatedElements.forEach((el) => observer.observe(el));
       });
-
-      $('html, body').stop().animate({
-        scrollTop: target.offset().top - 60 // Ajustez cette valeur selon la hauteur de votre en-tête fixe
-      }, 1000);
-
-      // Attache un écouteur d'événement aux liens d'ancre
-      document.querySelectorAll('.choixmenu').forEach(link => {
-          link.addEventListener('click', function(event) {
-              event.preventDefault(); // Empêche l'action par défaut (défilement instantané)
-              
-              // Récupère l'ID de l'ancre cible
-              const targetId = this.getAttribute('href').substring(1);
-              const targetElement = document.getElementById(targetId);
-
-              // Si l'élément cible existe
-              if (targetElement) {
-                  // Effectue un défilement vers l'élément cible avec une animation
-                  window.scrollTo({
-                      top: targetElement.offsetTop - 60, // Vous pouvez ajuster le -60 pour un en-tête fixe
-                      behavior: 'smooth' // Utilisation du défilement fluide
-                  });
-              }
-          });
-      });
-
-
     </script>
 
   </body>
