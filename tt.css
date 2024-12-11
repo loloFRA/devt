@@ -188,7 +188,7 @@ body {
 }
 
 .img-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -197,7 +197,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    z-index: 0;
+    z-index: -1;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-animation-name: zoomIn_header;
