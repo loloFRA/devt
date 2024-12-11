@@ -270,11 +270,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
-
-      //close btn menu
+      let c, ctx, W, H;
+      let dots = []
+      const color = ['#EAB71B', '#95D01D', '#1DCEC4', '#1D62CE', '#CE1D5B','#EAB71B', '#95D01D', '#1DCEC4', '#1D62CE', '#CE1D5B'];
+      const random = (max=1, min=0) => Math.random() * (max - min) + min;
+      
       $('.choixmenu').on('click', () => $('.btn_menu').click());
 
-      //scroll listener
       document.addEventListener('DOMContentLoaded', function () {
         const navbar = document.querySelector('.navbar');
         const brand = document.querySelector('.navbar-brand');
@@ -343,7 +345,62 @@
 
         updateNavbarVisibility();
         window.addEventListener('scroll', updateNavbarVisibility);
+        cnvAnim();
       });
+
+      const cnvAnim = () => {
+        class Dot {
+          constructor(i){ 
+            this.r = random(50,20)
+            this.x = random(W-this.r,this.r)
+            this.y = random(H-this.r,this.r)
+            this.s = { x:random(1,-1),y:random(0.5,-0.5)}
+            this.dir = {x:1,y:1}
+            this.color = color[i]
+          }
+          draw() {
+            ctx.beginPath()
+            ctx.fillStyle = this.color
+            ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI)
+            ctx.fill()
+          }
+          update() {
+            if(this.x>W-this.r||this.x<this.r)this.dir.x*=-1
+            if(this.y>H-this.r||this.y<this.r)this.dir.y*=-1
+            this.x += this.s.x*this.dir.x
+            this.y += this.s.y*this.dir.y
+            this.draw()
+          }
+        }
+
+        const newDot = () => {
+            for(let i=0;i<color.length;i++) dots.push(new Dot(i))
+            setInterval(()=>{
+                dots = []
+                for(let i=0;i<color.length;i++) dots.push(new Dot(i))
+            },3000)
+        }
+
+        const init = () => {
+          c = document.getElementById("blurCanvas");
+          W = c.offsetWidth; 
+          H = c.offsetHeight; 
+          c.width = W; 
+          c.height = H; 
+          ctx = c.getContext("2d");
+          ctx.filter = 'blur(50px)';
+          newDot()
+          animate();
+        };
+
+        const animate = () => {
+          ctx.clearRect(0, 0, W, H);
+          dots.forEach(x => x.update())
+          requestAnimationFrame(animate);
+        };
+
+        init()
+      }
     </script>
 
   </body>
