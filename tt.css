@@ -56,7 +56,8 @@ body {
 }
 
 .offcanvas-header {
-  border-bottom: 1px solid #444;
+  background-color: black;
+  color: white;
 }
 
 .offcanvas-body a {
@@ -72,7 +73,7 @@ body {
 }
 
 .offcanvas-body {
-  background: #f0f4f8; 
+  background:transparent; 
   color: #000; 
   padding: 5px; 
   display: flex;
@@ -566,4 +567,14 @@ footer .social-icons {
   width: 100%;
   height: 100%;
   top:0;left: 0;
+}
+
+#blurCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  background: white; 
 }
