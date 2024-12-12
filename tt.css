@@ -56,7 +56,7 @@ body {
 }
 
 .offcanvas-header {
-  background-color: black;
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
   color: white;
 }
 
@@ -73,8 +73,8 @@ body {
 }
 
 .offcanvas-body {
-  background:transparent; 
-  color: #000; 
+  background: linear-gradient(90deg, #3a5f99, #5c85c4);
+  color: white; 
   padding: 5px; 
   display: flex;
   flex-direction: column;
@@ -99,6 +99,9 @@ body {
 
 .chxicon{
   width: 20px;
+  color: transparent !important ; 
+  -webkit-text-stroke: 1px white; 
+  text-stroke: 1px white; 
 }
 
 .chxicon2{
@@ -113,6 +116,7 @@ body {
 .services-menu li {
   margin-bottom: 3px; 
   margin-left:20px;
+  font-size: 0.9em !important;
 }
 
 .service-icon {
@@ -569,12 +573,3 @@ footer .social-icons {
   top:0;left: 0;
 }
 
-#blurCanvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; 
-  background: white; 
-}
