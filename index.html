@@ -77,12 +77,12 @@
         <a class="choixmenu" href="#"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Réalisations</a>
         <a class="choixmenu" href="#services"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Services</a>
         <ul class="services-menu">
-          <li><a class="choixmenu" href="#service-videosurveillance"><i class="chxicon fas fa-video service-icon text-primary fa-lg"></i> Vidéosurveillance</a></li>
-          <li><a class="choixmenu" href="#service-electricite"><i class=" chxicon fas fa-lightbulb service-icon text-warning fa-lg"></i> Électricité</a></li>
-          <li><a class="choixmenu" href="#service-domotique"><i class="chxicon fas fa-home service-icon text-danger fa-lg"></i> Domotique</a></li>
-          <li><a class="choixmenu" href="#service-antennes"><i class="chxicon fas fa-satellite-dish service-icon text-info fa-lg"></i> Antennes</a></li>
-          <li><a class="choixmenu" href="#service-controle-acces"><i class="chxicon fas fa-lock service-icon text-success fa-lg"></i> Contrôle d'accès</a></li>
-          <li><a class="choixmenu" href="#service-interphones"><i class="chxicon fas fa-phone service-icon text-secondary fa-lg"></i> Interphones</a></li>
+          <li><a class="choixmenu" href="#service-videosurveillance"><i class="chxicon fas fa-video service-icon fa-lg"></i> Vidéosurveillance</a></li>
+          <li><a class="choixmenu" href="#service-electricite"><i class=" chxicon fas fa-lightbulb service-icon fa-lg"></i> Électricité</a></li>
+          <li><a class="choixmenu" href="#service-domotique"><i class="chxicon fas fa-home service-icon fa-lg"></i> Domotique</a></li>
+          <li><a class="choixmenu" href="#service-antennes"><i class="chxicon fas fa-satellite-dish service-icon fa-lg"></i> Antennes</a></li>
+          <li><a class="choixmenu" href="#service-controle-acces"><i class="chxicon fas fa-lock service-icon fa-lg"></i> Contrôle d'accès</a></li>
+          <li><a class="choixmenu" href="#service-interphones"><i class="chxicon fas fa-phone service-icon fa-lg"></i> Interphones</a></li>
         </ul>
         <a class="choixmenu" href="#contact"><i class="fas fa-angle-right" style="margin-right: 10px"></i>Contact</a>
         <footer class="text-center py-3 mt-auto" style="background-color: transparent;">
@@ -346,62 +346,8 @@
 
         updateNavbarVisibility();
         window.addEventListener('scroll', updateNavbarVisibility);
-        cnvAnim();
       });
 
-      const cnvAnim = () => {
-        class Dot {
-          constructor(i){ 
-            this.r = random(50,20)
-            this.x = random(W-this.r,this.r)
-            this.y = random(H-this.r,this.r)
-            this.s = { x:random(1,-1),y:random(0.5,-0.5)}
-            this.dir = {x:1,y:1}
-            this.color = color[i]
-          }
-          draw() {
-            ctx.beginPath()
-            ctx.fillStyle = this.color
-            ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI)
-            ctx.fill()
-          }
-          update() {
-            if(this.x>W-this.r||this.x<this.r)this.dir.x*=-1
-            if(this.y>H-this.r||this.y<this.r)this.dir.y*=-1
-            this.x += this.s.x*this.dir.x
-            this.y += this.s.y*this.dir.y
-            this.draw()
-          }
-        }
-
-        const newDot = () => {
-            for(let i=0;i<color.length;i++) dots.push(new Dot(i))
-            setInterval(()=>{
-                dots = []
-                for(let i=0;i<color.length;i++) dots.push(new Dot(i))
-            },3000)
-        }
-
-        const init = () => {
-          c = document.getElementById("blurCanvas");
-          W = c.offsetWidth; 
-          H = c.offsetHeight; 
-          c.width = W; 
-          c.height = H; 
-          ctx = c.getContext("2d");
-          ctx.filter = 'blur(50px)';
-          newDot()
-          animate();
-        };
-
-        const animate = () => {
-          ctx.clearRect(0, 0, W, H);
-          dots.forEach(x => x.update())
-          requestAnimationFrame(animate);
-        };
-
-        init()
-      }
     </script>
 
   </body>
