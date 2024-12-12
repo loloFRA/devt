@@ -73,7 +73,7 @@ body {
 }
 
 .offcanvas-body {
-  background: linear-gradient(90deg, #3a5f99, #5c85c4);
+  background: linear-gradient(90deg, #5c85c4 , #3a5f99);
   color: white; 
   padding: 5px; 
   display: flex;
