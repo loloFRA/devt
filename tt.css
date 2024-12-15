@@ -568,4 +568,12 @@ footer .social-icons {
   height: 100%;
   top:0;left: 0;
 }
-
+#cookie-alert {
+      display: none; /* Par défaut, masqué */
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1050;
+      max-width: 350px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
