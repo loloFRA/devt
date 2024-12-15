@@ -207,75 +207,156 @@
     </div>
 
     <section id="service-videosurveillance" style="display: none;">
-        <div class="position-relative">
-          <img src="imgCamera.png" class="img-fluid w-100" alt="Vidéosurveillance">
-          <div class="position-absolute shadow rounded p-2" 
-               style="bottom: -25px; left: 50%; transform: translateX(-50%); max-width: 70%; width: 100%; color: white;background-color: rgba(255,130,0,.9);">
-            <h1 class="text-center antonfont" style="font-size: calc(1rem + 1vw);">Vidéosurveillance</h1>
+        <div class="container">
+          <div class="position-relative">
+            <img src="imgCamera.png" class="img-fluid w-100" alt="Vidéosurveillance">
+            <div class="position-absolute shadow rounded p-2" 
+                 style="bottom: -25px; left: 50%; transform: translateX(-50%); max-width: 70%; width: 100%; color: white; background-color: rgba(93, 173, 226,.9);">
+              <h1 class="text-center antonfont" style="font-size: calc(1rem + 1vw);text-shadow: 2px 2px 4px black;">Vidéosurveillance</h1>
+            </div>
           </div>
-        </div>
 
-        <div class="bg-light p-4 shadow-sm rounded mt-5">
-          <h3 class="mb-4  py-3"><i class="fas fa-tools text-primary"></i> Besoins</h2>
-          <p>La vidéosurveillance est essentielle pour sécuriser les habitations, les immeubles, les locaux commerciaux et plus encore. Les besoins varient selon les secteurs et les exigences en matière de sécurité.</p>
-          <hr>
-          <h3 class="mb-4 py-3"><i class="fas fa-wrench text-success"></i> Maintenance</h2>
-          <p>Une maintenance régulière est nécessaire pour garantir le bon fonctionnement des équipements. Cela inclut le nettoyage des caméras, la vérification des connexions et la mise à jour des logiciels.</p>
-          <hr>
-          <h3 class="mb-4 py-3"><i class="fas fa-cogs text-warning"></i> Installation</h2>
-          <p>Lors de l'installation, il est important de choisir des emplacements stratégiques pour les caméras, d'assurer une bonne couverture et d'utiliser des matériaux de qualité pour le câblage et les fixations.</p>
-          <hr>
-          <h3 class="mb-4 py-3"><i class="fas fa-chart-bar text-danger"></i> Études</h2>
-          <p>Les études préliminaires incluent une analyse des risques, la définition des besoins spécifiques et la préparation d'un plan d'installation adapté.</p>
-          <hr>
-          <h3 class="mb-4 py-3"><i class="fas fa-bolt text-info"></i> Dépannages</h2>
-          <p>Les dépannages incluent le remplacement des composants défectueux, la réparation des câbles et la résolution des problèmes de connexion.</p>
-          <hr>
-          <h3 class="mb-4 py-3"><i class="fas fa-video text-secondary"></i> Types de caméras</h2>
-          <ul>
-            <li><strong>Caméras analogiques :</strong> Simples et abordables, elles utilisent des câbles coaxiaux.</li>
-            <li><strong>Caméras IP :</strong> Plus modernes, elles permettent une visualisation à distance via Internet.</li>
-            <li><strong>Caméras PTZ :</strong> Permettent un contrôle du panoramique, de l'inclinaison et du zoom.</li>
-          </ul>
-          <hr>
-          <h3 class="mb-4"><i class="fas fa-industry text-primary"></i> Marques utilisées</h2>
-          <p>Les systèmes de vidéosurveillance de qualité reposent sur des marques reconnues comme :</p>
-          <ul>
-            <li><strong>Dahua :</strong> Caméras robustes et solutions polyvalentes.</li>
-            <li><strong>Hikvision :</strong> Leader mondial avec une large gamme de produits.</li>
-            <li><strong>Bosch :</strong> Technologies innovantes et fiabilité.</li>
-            <li><strong>Axis :</strong> Spécialiste des caméras réseau haut de gamme.</li>
-            <li><strong>Uniview :</strong> Solutions abordables pour tous les besoins.</li>
-          </ul>
-        <hr>
-          <h3 class="mb-4 py-3"><i class="fas fa-network-wired text-dark"></i> Types de câbles</h2>
-          <ul>
-            <li><strong>Coaxiaux :</strong> Utilisés pour les caméras analogiques.</li>
-            <li><strong>Ethernet (Cat5e, Cat6) :</strong> Nécessaires pour les caméras IP.</li>
-            <li><strong>Fibre optique :</strong> Pour des connexions longue distance avec une grande largeur de bande.</li>
-          </ul>
-          <hr>
-          <h3 class="mb-4 py-3"><i class="fas fa-wifi text-primary"></i> Types de connexions à distance</h2>
-          <ul>
-            <li><strong>Via une box Internet :</strong> Permet l'accès aux caméras à distance.</li>
-            <li><strong>Wi-Fi :</strong> Pratique pour les endroits sans accès direct aux câbles.</li>
-            <li><strong>Réseaux mobiles (4G/5G) :</strong> Pour les emplacements isolés.</li>
-          </ul>
-          <hr>
-          <h3 class="mb-4 py-3"><i class="fas fa-building text-secondary"></i> Secteurs concernés</h2>
-          <ul>
-            <li><strong>Habitations :</strong> Maisons individuelles, appartements.</li>
-            <li><strong>Immeubles :</strong> Parties communes, parkings.</li>
-            <li><strong>Locaux commerciaux :</strong> Boutiques, entrepôts.</li>
-          </ul>
+          <div class="bg-light p-4 shadow-sm rounded mt-5 mx-auto" style="max-width: 900px;">
+            <h3 class="mb-4 py-3"><i class="fas fa-building text-secondary mr-2"></i> Secteurs concernés</h3>
+            <ul>
+              <li><strong>Habitations :</strong> Maisons individuelles, appartements.</li>
+              <li><strong>Immeubles :</strong> Parties communes, parkings.</li>
+              <li><strong>Locaux commerciaux :</strong> Boutiques, entrepôts.</li>
+            </ul>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-tools text-primary mr-5"></i> Besoins</h3>
+            <p>La vidéosurveillance est essentielle pour sécuriser les habitations, les immeubles, les locaux commerciaux et plus encore. Les besoins varient selon les secteurs et les exigences en matière de sécurité.</p>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-chart-bar text-danger mr-2"></i> Études</h3>
+            <p>Les études préliminaires incluent une analyse des risques, la définition des besoins spécifiques et la préparation d'un plan d'installation adapté.</p>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-cogs text-warning mr-2"></i> Installation</h3>
+            <p>Lors de l'installation, il est important de choisir des emplacements stratégiques pour les caméras, d'assurer une bonne couverture et d'utiliser des matériaux de qualité pour le câblage et les fixations.</p>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-wrench text-success mr-2"></i> Maintenance</h3>
+            <p>Une maintenance régulière est nécessaire pour garantir le bon fonctionnement des équipements. Cela inclut le nettoyage des caméras, la vérification des connexions et la mise à jour des logiciels.</p>
+            <hr>                
+
+            <h3 class="mb-4 py-3"><i class="fas fa-bolt text-info mr-2"></i> Dépannages</h3>
+            <p>Les dépannages incluent le remplacement des composants défectueux, la réparation des câbles et la résolution des problèmes de connexion.</p>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-industry text-primary mr-2"></i> Marques utilisées</h3>
+            <p>Les systèmes de vidéosurveillance de qualité reposent sur des marques reconnues comme :</p>
+            <ul>
+              <li><strong>Dahua :</strong> Caméras robustes et solutions polyvalentes.</li>
+              <li><strong>Hikvision :</strong> Leader mondial avec une large gamme de produits.</li>
+              <li><strong>Bosch :</strong> Technologies innovantes et fiabilité.</li>
+              <li><strong>Axis :</strong> Spécialiste des caméras réseau haut de gamme.</li>
+              <li><strong>Uniview :</strong> Solutions abordables pour tous les besoins.</li>
+            </ul>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-video text-secondary mr-2"></i> Types de caméras</h3>
+            <ul>
+              <li><strong>Caméras analogiques :</strong> Simples et abordables, elles utilisent des câbles coaxiaux.</li>
+              <li><strong>Caméras IP :</strong> Plus modernes, elles permettent une visualisation à distance via Internet.</li>
+              <li><strong>Caméras PTZ :</strong> Permettent un contrôle du panoramique, de l'inclinaison et du zoom.</li>
+            </ul>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-network-wired text-dark mr-2"></i> Types de câbles</h3>
+            <ul>
+              <li><strong>Coaxiaux :</strong> Utilisés pour les caméras analogiques.</li>
+              <li><strong>Ethernet (Cat5e, Cat6) :</strong> Nécessaires pour les caméras IP.</li>
+              <li><strong>Fibre optique :</strong> Pour des connexions longue distance avec une grande largeur de bande.</li>
+            </ul>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-wifi text-primary mr-2"></i> Types de connexions à distance</h3>
+            <ul>
+              <li><strong>Via une box Internet :</strong> Permet l'accès aux caméras à distance.</li>
+              <li><strong>Wi-Fi :</strong> Pratique pour les endroits sans accès direct aux câbles.</li>
+              <li><strong>Réseaux mobiles (4G/5G) :</strong> Pour les emplacements isolés.</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-    <section class="py-5 bg-light"  id="service-electricite" style="display: none">
-      <div class="container mt-5">
-        <h1 class="text-center" style="height: 400px">service-electricite</h1>
-      </div>
-    </section>
+      <section id="service-electricite" style="display: none;">
+        <div class="container">
+          <div class="position-relative">
+            <img src="imgElec.jpg" class="img-fluid w-100" alt="Électricité">
+            <div class="position-absolute shadow rounded p-2" 
+                 style="bottom: -25px; left: 50%; transform: translateX(-50%); max-width: 70%; width: 100%; color: white; background-color: rgba(244, 208, 63,.9);">
+              <h1 class="text-center antonfont" style="font-size: calc(1rem + 1vw);text-shadow: 2px 2px 4px black;">Électricité</h1>
+            </div>
+          </div>
+
+          <div class="bg-light p-4 shadow-sm rounded mt-5 mx-auto" style="max-width: 900px;">
+            <h3 class="mb-4 py-3"><i class="fas fa-bolt text-warning mr-2"></i> Secteurs concernés</h3>
+            <ul>
+              <li><strong>Habitations :</strong> Installations électriques résidentielles, maisons et appartements.</li>
+              <li><strong>Immeubles :</strong> Réseaux électriques dans les bâtiments commerciaux, bureaux, etc.</li>
+              <li><strong>Locaux commerciaux :</strong> Câblage, éclairage et alimentation pour les commerces.</li>
+            </ul>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-tools text-primary mr-2"></i> Besoins</h3>
+            <p>Les besoins en électricité varient en fonction des exigences en matière de sécurité, d'efficacité énergétique et de confort des utilisateurs. Cela inclut l'installation de prises, d'éclairages et d'appareils électriques adaptés.</p>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-chart-bar text-danger mr-2"></i> Études</h3>
+            <p>Les études préalables incluent une évaluation des besoins en électricité, la mise en place de plans de câblage, et la prise en compte des normes de sécurité en vigueur.</p>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-cogs text-warning mr-2"></i> Installation</h3>
+            <p>L'installation des systèmes électriques nécessite un respect strict des normes de sécurité et des méthodes efficaces pour garantir un câblage optimal et une alimentation fiable.</p>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-wrench text-success mr-2"></i> Maintenance</h3>
+            <p>Une maintenance régulière des installations électriques est essentielle pour prévenir les risques d'incendie, assurer le bon fonctionnement des équipements et vérifier les installations électriques.</p>
+            <hr>                
+
+            <h3 class="mb-4 py-3"><i class="fas fa-bolt text-info mr-2"></i> Dépannages</h3>
+            <p>Les dépannages incluent la réparation des pannes de courant, des courts-circuits, des prises défectueuses, et des installations électriques défaillantes.</p>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-plug text-primary mr-2"></i> Matériel utilisé</h3>
+            <p>Nous utilisons des marques et des équipements reconnus dans le domaine électrique pour garantir la sécurité et la performance de toutes les installations :</p>
+            <ul>
+              <li><strong>Schneider Electric :</strong> Solutions d'automatisation et de gestion de l'énergie.</li>
+              <li><strong>Legrand :</strong> Disjoncteurs, prises et interrupteurs de qualité supérieure.</li>
+              <li><strong>Siemens :</strong> Matériel pour systèmes de contrôle et de commande.</li>
+              <li><strong>ABB :</strong> Produits et solutions pour l'automatisation et la gestion de l'énergie.</li>
+              <li><strong>Hager :</strong> Équipements pour tableaux électriques et systèmes de distribution.</li>
+            </ul>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-plug text-secondary mr-2"></i> Types d'installations</h3>
+            <ul>
+              <li><strong>Installation domestique :</strong> Électricité pour maisons et appartements, y compris prises, éclairages et sécurité.</li>
+              <li><strong>Installation industrielle :</strong> Systèmes électriques complexes pour usines, entrepôts et zones industrielles.</li>
+              <li><strong>Installation tertiaire :</strong> Équipements pour bureaux, magasins et bâtiments commerciaux.</li>
+            </ul>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-lightbulb text-primary mr-2"></i> Solutions d'éclairage</h3>
+            <ul>
+              <li><strong>Éclairage LED :</strong> Efficace et économique, idéal pour les intérieurs et extérieurs.</li>
+              <li><strong>Éclairage d'urgence :</strong> Installation de systèmes d'éclairage de secours en cas de panne.</li>
+              <li><strong>Éclairage connecté :</strong> Solutions d'éclairage intelligentes, contrôlables à distance via des applications.</li>
+            </ul>
+            <hr>
+
+            <h3 class="mb-4 py-3"><i class="fas fa-wifi text-dark mr-2"></i> Câblage et connexions</h3>
+            <ul>
+              <li><strong>Fils et câbles :</strong> Câblage de haute qualité pour une transmission sûre de l'électricité.</li>
+              <li><strong>Câbles à fibre optique :</strong> Pour des connexions à haute vitesse dans les installations professionnelles.</li>
+              <li><strong>Réseaux électriques intelligents :</strong> Pour une gestion optimisée de la consommation d'énergie.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
     <section class="py-5 bg-light"  id="service-domotique" style="display: none">
       <div class="container mt-5">
