@@ -220,7 +220,7 @@ body {
     animation-fill-mode: forwards;
     -webkit-animation-play-state: running;
     animation-play-state: running;
-    background-image: url('bgtest.png');
+    background-image: url('../images/bgtest.png');
     -webkit-filter: blur(10px); 
     filter: blur(10px);        
     -webkit-transform: scale(1.4);
@@ -327,7 +327,7 @@ body {
 }
 
 #services{
-  background-image: url('servicesbg.png'); 
+  background-image: url('../images/servicesbg.png'); 
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
@@ -378,7 +378,7 @@ h2 {
   background-color: transparent;
 }
 #contact {
-  background-image: url('imgcontact.png'); 
+  background-image: url('../images/imgcontact.png'); 
   background-size: cover; 
   background-position: center;           
   background-repeat: no-repeat;
